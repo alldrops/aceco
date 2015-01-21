@@ -1,0 +1,370 @@
+@import 'fonts';
+
+//Colors
+
+$light-gray: #939393;
+$dark-gray: #272727;
+$blue: #57c5c7;
+
+body {
+	background: #efefef;
+	overflow-x: hidden;
+}
+
+.wrapper {
+	max-width: 1060px;
+	padding: 0 20px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.content-wrapper {
+	position: relative;
+	margin: 0 auto;
+	max-width: 880px;
+	padding: 0 20px;
+}
+
+// HEADER
+
+.site-header {
+	float: left;
+	width: 100%;
+
+	.white-bar {
+		position: absolute;
+		left: -25%;
+		top: 0;
+		height: 85px;
+		background: #FFF;
+		width: 50%;
+	}
+
+	.top-bar {
+		width: 100%;
+		background: $dark-gray;
+		float: left;
+		margin-bottom: 45px;
+
+		.wrapper {
+			padding: 0;
+		}
+
+		.logo-container {
+			float: left;
+			width: 100%;
+			background: #FFF;
+
+			a {
+				display: block;
+				width: 237px;
+				height: 49px;
+				margin: 18px auto;
+				text-indent: -99999px;
+				background: url(../images/logo-aceco.png) no-repeat center center;
+			}
+		}
+
+		.delivery-phone-box {
+			padding: 0 20px;
+
+			span {
+				float: left;
+				color: #FFF;
+				@include proxima-nova-semibold;
+				font-size: 12px;
+				text-transform: uppercase;
+				padding: 10px 0 10px 20px;
+				position: relative;
+				line-height: 2em;
+
+				&.delivery {
+					&:before {
+						content: " ";
+						position: absolute;
+						left: 0;
+						top: 12px;
+						width: 15px;
+						height: 17px;
+						//width: 35px;
+						//height: 38px;
+						background: url('../images/icon-delivery.png') no-repeat center center;
+						background-size: 100%;
+					}
+				}
+
+				&.phone {
+					text-align: right;
+					float: right;
+
+					&:before {
+						content: " ";
+						position: absolute;
+						left: 0px;
+						top: 13px;
+						width: 15px;
+						height: 15px;
+						//width: 27px;
+						//height: 27px;
+						background: url('../images/icon-phone.png') no-repeat center center;
+						background-size: 100%;
+					}
+				}
+			}
+		}
+	}
+
+	.main-nav {
+		float: left;
+		width: 100%;
+		margin-bottom: 15px;
+
+		li {
+			padding: 0 25px;
+			float: left;
+
+			&:first-child {
+				margin-left: 10px;	
+			}
+
+			//nav break fix
+			@media only screen and (min-width: 1069px) {
+				padding: 0 28px;
+			}
+			
+			a {
+				@include proxima-nova-light;
+				font-size: 14px;
+				line-height: 35px;
+				display: block;
+				text-transform: uppercase;
+				color: #000;
+
+				&:hover {
+					border-bottom: 2px solid #000;
+				}
+			}
+			
+		}
+
+		li.current-menu-item a, li.current_page_item a {
+			@include proxima-nova-semibold;
+			border-bottom: 2px solid #000;
+		}
+	}
+}
+
+// MAIN CONTENT
+
+.main-content {
+	float: left;
+	width: 100%;
+
+	.content-block {
+		background: #FFF;
+		padding: 30px 0;
+		float: left;
+		width: 100%;
+
+		&.dashed {
+			background: url(../images/dashed-line.png) repeat-x left bottom #FFF;
+		}
+
+		&.gray {
+			background: #efefef;
+			padding: 0 0 80px 0;
+
+			&.dashed {
+				background: url(../images/dashed-line.png) repeat-x left bottom #efefef;
+			}
+		}
+
+		h2 {
+			@include merriweather-bold;
+			font-size: 20px;
+			margin-bottom: 50px;
+		}
+
+		.text {
+			position: relative;
+			padding-top: 20px;
+			color: $light-gray;
+			font-size: 14px;
+			@include merriweather-light;
+			line-height: 24px;
+
+			&:before {
+				content: " ";
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 36px;
+				height: 4px;
+				background: $blue;
+			}
+
+			p {
+				margin-top: 25px;
+
+				&:first-child {
+					margin-top: 0;
+				}
+
+				strong, span {
+					@include proxima-nova-semibold;
+					text-transform: uppercase;
+				}
+
+				a {
+					@include proxima-nova-semibold;
+				}
+
+				strong {
+					color: #000;
+				}
+
+				span, a {
+					color: $blue;
+				}
+			}
+		}
+
+		.appliances-categories {
+			margin-bottom: 80px;
+			float: left;
+			width: 100%;
+
+			a.appliance {
+				width: 100%;
+				float: left;
+				text-align: center;
+				@include proxima-nova-light;
+				font-size: 14px;
+				color: #000;
+				text-transform: uppercase;
+				margin-top: 30px;
+
+				&:first-child {
+					margin-top: 0;
+				}
+
+				img {
+					display: block;
+					clear: both;
+					margin: 0 auto 30px auto;
+				}
+			}
+		}
+		
+		.black-section-title {
+			background: $dark-gray;
+			text-align: center;
+			@include proxima-nova-semibold;
+			font-size: 14px;
+			text-transform: uppercase;
+			width: 100%;
+			float: left;
+			line-height: 44px;
+			color: #FFF;
+
+			span {
+				position: relative;
+				
+				&:before {
+					content: " ";
+					position: absolute;
+					right: -33px;
+					top: 4px;
+					width: 16px;
+					height: 9px;
+					background: url('../images/arrow-down.png') no-repeat center center;
+				}
+			}
+		}
+		
+		.brands-list {
+			li {
+				width: 100%;
+				text-align: center;
+				float: left;
+				margin-top: 50px;
+			}
+		}
+	}
+}
+
+
+// FOOTER
+
+.site-footer {
+	float: left;
+	width: 100%;
+	padding-bottom: 50px;
+
+	.wrapper { padding: 0; }
+	nav { clear: both; }
+	
+	.social-nav {
+		width: 100%;
+		background: $dark-gray;
+		height: 44px;
+		clear: both;
+		float: right;
+		
+		li {
+			float: left;
+			width: 33%;
+			height: 44px;
+
+			a {
+				display: block;
+				text-align: center;
+				width: 100%;
+				height: 100%;
+				background: rgba(255, 255, 255, 0.6);
+				text-indent: -99999px;
+			}
+
+			&.social-twitter a { background: url('../images/icon-twitter.png') no-repeat center center; }
+			&.social-facebook a { background: url('../images/icon-facebook.png') no-repeat center center; }
+			&.social-plus a { background: url('../images/icon-plus.png') no-repeat center center; }
+		}
+	}
+
+	.footer-nav {
+		li {
+			float: left;
+
+			a {
+				@include proxima-nova-semibold;
+				font-size: 14px;
+				text-transform: uppercase;
+				color: $light-gray;
+				padding: 0 10px;
+				text-decoration: none;
+			}
+		}
+	}
+
+	.footer-info {
+		clear: both;
+		margin-top: 30px;
+		display: block;
+		float: left;
+		width: 100%;
+
+		p, a {
+			@include proxima-nova-regular;
+			font-size: 14px;
+			color: $light-gray;
+			text-align: center;
+			line-height: 26px;
+		}
+	}
+}
+
+
+// CUSTOM CSS - INTERIOR page-break-inside: 
+
+// Contact page
+

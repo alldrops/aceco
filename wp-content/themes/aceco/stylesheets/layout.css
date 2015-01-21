@@ -1,0 +1,380 @@
+/* line 9, ../sass/layout.scss */
+body {
+  background: #efefef;
+  overflow-x: hidden;
+}
+
+/* line 14, ../sass/layout.scss */
+.wrapper {
+  max-width: 1060px;
+  padding: 0 20px;
+  position: relative;
+  margin: 0 auto;
+}
+
+/* line 21, ../sass/layout.scss */
+.content-wrapper {
+  position: relative;
+  margin: 0 auto;
+  max-width: 880px;
+  padding: 0 20px;
+}
+
+/* line 30, ../sass/layout.scss */
+.site-header {
+  float: left;
+  width: 100%;
+}
+/* line 34, ../sass/layout.scss */
+.site-header .white-bar {
+  position: absolute;
+  left: -25%;
+  top: 0;
+  height: 85px;
+  background: #FFF;
+  width: 50%;
+}
+/* line 43, ../sass/layout.scss */
+.site-header .top-bar {
+  width: 100%;
+  background: #272727;
+  float: left;
+  margin-bottom: 45px;
+}
+/* line 49, ../sass/layout.scss */
+.site-header .top-bar .wrapper {
+  padding: 0;
+}
+/* line 53, ../sass/layout.scss */
+.site-header .top-bar .logo-container {
+  float: left;
+  width: 100%;
+  background: #FFF;
+}
+/* line 58, ../sass/layout.scss */
+.site-header .top-bar .logo-container a {
+  display: block;
+  width: 237px;
+  height: 49px;
+  margin: 18px auto;
+  text-indent: -99999px;
+  background: url(../images/logo-aceco.png) no-repeat center center;
+}
+/* line 68, ../sass/layout.scss */
+.site-header .top-bar .delivery-phone-box {
+  padding: 0 20px;
+}
+/* line 71, ../sass/layout.scss */
+.site-header .top-bar .delivery-phone-box span {
+  float: left;
+  color: #FFF;
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 10px 0 10px 20px;
+  position: relative;
+  line-height: 2em;
+}
+/* line 82, ../sass/layout.scss */
+.site-header .top-bar .delivery-phone-box span.delivery:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 12px;
+  width: 15px;
+  height: 17px;
+  background: url("../images/icon-delivery.png") no-repeat center center;
+  background-size: 100%;
+}
+/* line 96, ../sass/layout.scss */
+.site-header .top-bar .delivery-phone-box span.phone {
+  text-align: right;
+  float: right;
+}
+/* line 100, ../sass/layout.scss */
+.site-header .top-bar .delivery-phone-box span.phone:before {
+  content: " ";
+  position: absolute;
+  left: 0px;
+  top: 13px;
+  width: 15px;
+  height: 15px;
+  background: url("../images/icon-phone.png") no-repeat center center;
+  background-size: 100%;
+}
+/* line 117, ../sass/layout.scss */
+.site-header .main-nav {
+  float: left;
+  width: 100%;
+  margin-bottom: 15px;
+}
+/* line 122, ../sass/layout.scss */
+.site-header .main-nav li {
+  padding: 0 25px;
+  float: left;
+}
+/* line 126, ../sass/layout.scss */
+.site-header .main-nav li:first-child {
+  margin-left: 10px;
+}
+@media only screen and (min-width: 1069px) {
+  /* line 122, ../sass/layout.scss */
+  .site-header .main-nav li {
+    padding: 0 28px;
+  }
+}
+/* line 135, ../sass/layout.scss */
+.site-header .main-nav li a {
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 35px;
+  display: block;
+  text-transform: uppercase;
+  color: #000;
+}
+/* line 143, ../sass/layout.scss */
+.site-header .main-nav li a:hover {
+  border-bottom: 2px solid #000;
+}
+/* line 150, ../sass/layout.scss */
+.site-header .main-nav li.current-menu-item a, .site-header .main-nav li.current_page_item a {
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  border-bottom: 2px solid #000;
+}
+
+/* line 159, ../sass/layout.scss */
+.main-content {
+  float: left;
+  width: 100%;
+}
+/* line 163, ../sass/layout.scss */
+.main-content .content-block {
+  background: #FFF;
+  padding: 30px 0;
+  float: left;
+  width: 100%;
+}
+/* line 169, ../sass/layout.scss */
+.main-content .content-block.dashed {
+  background: url(../images/dashed-line.png) repeat-x left bottom #FFF;
+}
+/* line 173, ../sass/layout.scss */
+.main-content .content-block.gray {
+  background: #efefef;
+  padding: 0 0 80px 0;
+}
+/* line 177, ../sass/layout.scss */
+.main-content .content-block.gray.dashed {
+  background: url(../images/dashed-line.png) repeat-x left bottom #efefef;
+}
+/* line 182, ../sass/layout.scss */
+.main-content .content-block h2 {
+  font-family: "merriweather",serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+/* line 188, ../sass/layout.scss */
+.main-content .content-block .text {
+  position: relative;
+  padding-top: 20px;
+  color: #939393;
+  font-size: 14px;
+  font-family: "merriweather",serif;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+}
+/* line 196, ../sass/layout.scss */
+.main-content .content-block .text:before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 36px;
+  height: 4px;
+  background: #57c5c7;
+}
+/* line 206, ../sass/layout.scss */
+.main-content .content-block .text p {
+  margin-top: 25px;
+}
+/* line 209, ../sass/layout.scss */
+.main-content .content-block .text p:first-child {
+  margin-top: 0;
+}
+/* line 213, ../sass/layout.scss */
+.main-content .content-block .text p strong, .main-content .content-block .text p span {
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+/* line 218, ../sass/layout.scss */
+.main-content .content-block .text p a {
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}
+/* line 222, ../sass/layout.scss */
+.main-content .content-block .text p strong {
+  color: #000;
+}
+/* line 226, ../sass/layout.scss */
+.main-content .content-block .text p span, .main-content .content-block .text p a {
+  color: #57c5c7;
+}
+/* line 232, ../sass/layout.scss */
+.main-content .content-block .appliances-categories {
+  margin-bottom: 80px;
+  float: left;
+  width: 100%;
+}
+/* line 237, ../sass/layout.scss */
+.main-content .content-block .appliances-categories a.appliance {
+  width: 100%;
+  float: left;
+  text-align: center;
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  color: #000;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+/* line 247, ../sass/layout.scss */
+.main-content .content-block .appliances-categories a.appliance:first-child {
+  margin-top: 0;
+}
+/* line 251, ../sass/layout.scss */
+.main-content .content-block .appliances-categories a.appliance img {
+  display: block;
+  clear: both;
+  margin: 0 auto 30px auto;
+}
+/* line 259, ../sass/layout.scss */
+.main-content .content-block .black-section-title {
+  background: #272727;
+  text-align: center;
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  width: 100%;
+  float: left;
+  line-height: 44px;
+  color: #FFF;
+}
+/* line 270, ../sass/layout.scss */
+.main-content .content-block .black-section-title span {
+  position: relative;
+}
+/* line 273, ../sass/layout.scss */
+.main-content .content-block .black-section-title span:before {
+  content: " ";
+  position: absolute;
+  right: -33px;
+  top: 4px;
+  width: 16px;
+  height: 9px;
+  background: url("../images/arrow-down.png") no-repeat center center;
+}
+/* line 286, ../sass/layout.scss */
+.main-content .content-block .brands-list li {
+  width: 100%;
+  text-align: center;
+  float: left;
+  margin-top: 50px;
+}
+
+/* line 299, ../sass/layout.scss */
+.site-footer {
+  float: left;
+  width: 100%;
+  padding-bottom: 50px;
+}
+/* line 304, ../sass/layout.scss */
+.site-footer .wrapper {
+  padding: 0;
+}
+/* line 305, ../sass/layout.scss */
+.site-footer nav {
+  clear: both;
+}
+/* line 307, ../sass/layout.scss */
+.site-footer .social-nav {
+  width: 100%;
+  background: #272727;
+  height: 44px;
+  clear: both;
+  float: right;
+}
+/* line 314, ../sass/layout.scss */
+.site-footer .social-nav li {
+  float: left;
+  width: 33%;
+  height: 44px;
+}
+/* line 319, ../sass/layout.scss */
+.site-footer .social-nav li a {
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  text-indent: -99999px;
+}
+/* line 328, ../sass/layout.scss */
+.site-footer .social-nav li.social-twitter a {
+  background: url("../images/icon-twitter.png") no-repeat center center;
+}
+/* line 329, ../sass/layout.scss */
+.site-footer .social-nav li.social-facebook a {
+  background: url("../images/icon-facebook.png") no-repeat center center;
+}
+/* line 330, ../sass/layout.scss */
+.site-footer .social-nav li.social-plus a {
+  background: url("../images/icon-plus.png") no-repeat center center;
+}
+/* line 335, ../sass/layout.scss */
+.site-footer .footer-nav li {
+  float: left;
+}
+/* line 338, ../sass/layout.scss */
+.site-footer .footer-nav li a {
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #939393;
+  padding: 0 10px;
+  text-decoration: none;
+}
+/* line 349, ../sass/layout.scss */
+.site-footer .footer-info {
+  clear: both;
+  margin-top: 30px;
+  display: block;
+  float: left;
+  width: 100%;
+}
+/* line 356, ../sass/layout.scss */
+.site-footer .footer-info p, .site-footer .footer-info a {
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #939393;
+  text-align: center;
+  line-height: 26px;
+}

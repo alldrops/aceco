@@ -1,0 +1,35 @@
+@mixin proxima-nova-light {
+	font-family: "proxima-nova",sans-serif;
+	font-style: normal;
+	font-weight: 300;
+}
+
+@mixin proxima-nova-regular {
+	font-family: "proxima-nova",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+
+@mixin proxima-nova-semibold {
+	font-family: "proxima-nova",sans-serif;
+	font-style: normal;
+	font-weight: 600;
+}
+
+@mixin merriweather-light {
+	font-family: "merriweather",serif;
+	font-style: normal;
+	font-weight: 300;
+}
+
+@mixin merriweather-regular {
+	font-family: "merriweather",serif;
+	font-style: normal;
+	font-weight: 400;
+}
+
+@mixin merriweather-bold {
+	font-family: "merriweather",serif;
+	font-style: normal;
+	font-weight: 700;
+}

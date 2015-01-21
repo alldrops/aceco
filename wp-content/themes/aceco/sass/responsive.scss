@@ -1,0 +1,263 @@
+@media only screen and (min-width: 480px) {
+	
+	// HEADER
+
+	.site-header {
+		.top-bar {
+			.delivery-phone-box {
+				span {
+					font-size: 16px;
+					padding: 10px 0 10px 30px;
+
+					&.delivery {
+						&:before {
+							top: 14px;
+							width: 20px;
+							height: 22px;
+						}
+					}
+
+					&.phone {
+						&:before {
+							top: 15px;
+							width: 20px;
+							height: 20px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 768px) {
+
+	// HEADER
+
+	.site-header {
+		.top-bar {
+			.wrapper {
+				padding: 0 20px;
+			}
+
+			.logo-container {
+				width: 280px;
+			}
+
+			.delivery-phone-box {
+				padding: 0;
+
+				span {
+					font-size: 14px;
+					padding: 10px 0 10px 57px;
+					line-height: 65px;
+
+					&.delivery {
+						margin-left: 54px;
+						&:before {
+							top: 25px;
+							width: 35px;
+							height: 38px;
+						}
+					}
+
+					&.phone {
+						&:before {
+							top: 30px;
+							width: 27px;
+							height: 27px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// MAIN CONTENT
+
+	.main-content {
+		.content-block {
+			padding: 70px 0;
+
+			&.gray {
+				padding: 0 0 70px 0;
+			}
+
+			h2 {
+				font-size: 38px;
+				margin-bottom: 30px;
+				line-height: 50px;
+			}
+
+			.text {
+				font-size: 16px;
+				line-height: 26px;
+			}
+
+			.appliances-categories {
+
+				a.appliance {
+					width: 50%;
+					margin-bottom: 30px;
+					margin-top: 0;
+
+					.appliance-icon {
+						width: 100%;
+						height: 154px;
+						text-align: center;
+						position: relative;
+						margin-bottom: 45px;
+					}
+
+					img {
+						margin: 0;
+						margin-left: -47px;
+						bottom: 0;
+						left: 50%;
+						position: absolute;
+					}
+				}
+			}
+
+			.black-section-title {
+				margin-bottom: 25px;
+			}
+
+			.brands-list {
+				li {
+					height: 90px;
+					width: 50%;
+					text-align: center;
+					white-space: nowrap;
+
+					&:before,
+					&.li_before {
+					    content: "";
+					    display: inline-block;
+					    height: 100%;
+    					vertical-align: middle;
+					}
+
+					img {
+					    vertical-align: middle;
+					    max-height: 90px;
+					    max-width: 243px;
+					}
+				}
+			}
+		}
+	}
+
+	// FOOTER
+
+	.site-footer {
+		.wrapper {
+			padding: 0 20px;
+		}
+
+		.social-nav {
+			width: 214px;
+		}
+
+		.footer-info {
+			float: left;
+			margin-left: 10px;
+
+			p {
+				text-align: left;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+
+	// HEADER
+
+	.site-header {
+		.top-bar {
+			.logo-container a { float: left; }
+
+			.delivery-phone-box {
+				span {
+					font-size: 21px;
+					line-height: 65px;
+
+					&.phone {
+						&:before {
+							left: 15px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// MAIN CONTENT
+
+	.main-content {
+		.content-block {
+
+			h2 {
+				max-width: 520px;
+			}
+
+			.text {
+				max-width: 630px;
+			}
+
+			.appliances-categories {
+
+				a.appliance {
+					width: 17%;
+					margin-left: 10.6%;
+
+					&:first-child {
+						margin-left: 0;
+					}
+
+					.appliance-icon {
+						height: 108px;
+						
+						&.washing img, &.dryers img {
+							width: 66px;
+							height: 68px;
+							margin-left: -33px;
+						}
+
+						&.fridges img {
+							width: 66px;
+							height: 108px;
+							margin-left: -33px;
+						}
+
+						&.microwaves img {
+							width: 72px;
+							height: 47px;
+							margin-left: -36px;
+						}
+					}
+				}
+			}
+
+			.brands-list {
+				li {
+					width: 33%;
+					margin-bottom: 25px;
+				}
+			}
+		}
+	}
+
+	// FOOTER
+
+	.site-footer {
+		.footer-nav {
+			margin-left: 30px;
+		}
+
+		.footer-info {
+			margin-left: 40px;
+		}
+	}
+}
