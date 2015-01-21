@@ -1,16 +1,22 @@
+@media only screen and (min-width: 400px) {
+  /* line 4, ../sass/responsive.scss */
+  .main-content .content-block .ball-about {
+    display: block;
+  }
+}
 @media only screen and (min-width: 480px) {
-  /* line 8, ../sass/responsive.scss */
+  /* line 18, ../sass/responsive.scss */
   .site-header .top-bar .delivery-phone-box span {
     font-size: 16px;
     padding: 10px 0 10px 30px;
   }
-  /* line 13, ../sass/responsive.scss */
+  /* line 23, ../sass/responsive.scss */
   .site-header .top-bar .delivery-phone-box span.delivery:before {
     top: 14px;
     width: 20px;
     height: 22px;
   }
-  /* line 21, ../sass/responsive.scss */
+  /* line 31, ../sass/responsive.scss */
   .site-header .top-bar .delivery-phone-box span.phone:before {
     top: 15px;
     width: 20px;
@@ -18,67 +24,73 @@
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 39, ../sass/responsive.scss */
+  /* line 49, ../sass/responsive.scss */
   .site-header .top-bar .wrapper {
     padding: 0 20px;
   }
-  /* line 43, ../sass/responsive.scss */
+  /* line 53, ../sass/responsive.scss */
   .site-header .top-bar .logo-container {
     width: 280px;
   }
-  /* line 47, ../sass/responsive.scss */
+  /* line 57, ../sass/responsive.scss */
   .site-header .top-bar .delivery-phone-box {
     padding: 0;
   }
-  /* line 50, ../sass/responsive.scss */
+  /* line 60, ../sass/responsive.scss */
   .site-header .top-bar .delivery-phone-box span {
     font-size: 14px;
     padding: 10px 0 10px 57px;
     line-height: 65px;
   }
-  /* line 55, ../sass/responsive.scss */
+  /* line 65, ../sass/responsive.scss */
   .site-header .top-bar .delivery-phone-box span.delivery {
     margin-left: 54px;
   }
-  /* line 57, ../sass/responsive.scss */
+  /* line 67, ../sass/responsive.scss */
   .site-header .top-bar .delivery-phone-box span.delivery:before {
     top: 25px;
     width: 35px;
     height: 38px;
   }
-  /* line 65, ../sass/responsive.scss */
+  /* line 75, ../sass/responsive.scss */
   .site-header .top-bar .delivery-phone-box span.phone:before {
     top: 30px;
     width: 27px;
     height: 27px;
   }
 
-  /* line 79, ../sass/responsive.scss */
+  /* line 89, ../sass/responsive.scss */
   .main-content .content-block {
     padding: 70px 0;
   }
-  /* line 82, ../sass/responsive.scss */
+  /* line 92, ../sass/responsive.scss */
   .main-content .content-block.gray {
     padding: 0 0 70px 0;
   }
-  /* line 86, ../sass/responsive.scss */
+  /* line 96, ../sass/responsive.scss */
   .main-content .content-block h2 {
     font-size: 38px;
     margin-bottom: 30px;
     line-height: 50px;
   }
-  /* line 92, ../sass/responsive.scss */
+  /* line 102, ../sass/responsive.scss */
+  .main-content .content-block h3:not(.black-section-title) {
+    font-size: 30px;
+    margin-bottom: 30px;
+    line-height: 45px;
+  }
+  /* line 108, ../sass/responsive.scss */
   .main-content .content-block .text {
     font-size: 16px;
     line-height: 26px;
   }
-  /* line 99, ../sass/responsive.scss */
+  /* line 115, ../sass/responsive.scss */
   .main-content .content-block .appliances-categories a.appliance {
     width: 50%;
     margin-bottom: 30px;
     margin-top: 0;
   }
-  /* line 104, ../sass/responsive.scss */
+  /* line 120, ../sass/responsive.scss */
   .main-content .content-block .appliances-categories a.appliance .appliance-icon {
     width: 100%;
     height: 154px;
@@ -86,7 +98,7 @@
     position: relative;
     margin-bottom: 45px;
   }
-  /* line 112, ../sass/responsive.scss */
+  /* line 128, ../sass/responsive.scss */
   .main-content .content-block .appliances-categories a.appliance img {
     margin: 0;
     margin-left: -47px;
@@ -94,114 +106,134 @@
     left: 50%;
     position: absolute;
   }
-  /* line 122, ../sass/responsive.scss */
+  /* line 138, ../sass/responsive.scss */
   .main-content .content-block .black-section-title {
     margin-bottom: 25px;
   }
-  /* line 127, ../sass/responsive.scss */
+  /* line 143, ../sass/responsive.scss */
   .main-content .content-block .brands-list li {
     height: 90px;
     width: 50%;
     text-align: center;
     white-space: nowrap;
   }
-  /* line 133, ../sass/responsive.scss */
+  /* line 149, ../sass/responsive.scss */
   .main-content .content-block .brands-list li:before, .main-content .content-block .brands-list li.li_before {
     content: "";
     display: inline-block;
     height: 100%;
     vertical-align: middle;
   }
-  /* line 141, ../sass/responsive.scss */
+  /* line 157, ../sass/responsive.scss */
   .main-content .content-block .brands-list li img {
     vertical-align: middle;
     max-height: 90px;
     max-width: 243px;
   }
+  /* line 165, ../sass/responsive.scss */
+  .main-content .content-block .ball-about {
+    margin-left: -60px;
+    margin-right: 100px;
+  }
 
-  /* line 154, ../sass/responsive.scss */
+  /* line 175, ../sass/responsive.scss */
   .site-footer .wrapper {
     padding: 0 20px;
   }
-  /* line 158, ../sass/responsive.scss */
+  /* line 179, ../sass/responsive.scss */
   .site-footer .social-nav {
     width: 214px;
   }
-  /* line 162, ../sass/responsive.scss */
+  /* line 183, ../sass/responsive.scss */
+  .site-footer .footer-nav {
+    display: block;
+    width: 50%;
+    line-height: 30px;
+  }
+  /* line 189, ../sass/responsive.scss */
   .site-footer .footer-info {
     float: left;
     margin-left: 10px;
   }
-  /* line 166, ../sass/responsive.scss */
+  /* line 193, ../sass/responsive.scss */
   .site-footer .footer-info p {
     text-align: left;
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 179, ../sass/responsive.scss */
+  /* line 206, ../sass/responsive.scss */
   .site-header .top-bar .logo-container a {
     float: left;
   }
-  /* line 182, ../sass/responsive.scss */
+  /* line 209, ../sass/responsive.scss */
   .site-header .top-bar .delivery-phone-box span {
     font-size: 21px;
     line-height: 65px;
   }
-  /* line 187, ../sass/responsive.scss */
+  /* line 214, ../sass/responsive.scss */
   .site-header .top-bar .delivery-phone-box span.phone:before {
     left: 15px;
   }
 
-  /* line 201, ../sass/responsive.scss */
-  .main-content .content-block h2 {
+  /* line 228, ../sass/responsive.scss */
+  .main-content .content-block h2, .main-content .content-block h3 {
     max-width: 520px;
   }
-  /* line 205, ../sass/responsive.scss */
+  /* line 231, ../sass/responsive.scss */
+  .main-content .content-block h2.black-section-title, .main-content .content-block h3.black-section-title {
+    max-width: 100%;
+  }
+  /* line 236, ../sass/responsive.scss */
   .main-content .content-block .text {
     max-width: 630px;
   }
-  /* line 211, ../sass/responsive.scss */
+  /* line 242, ../sass/responsive.scss */
   .main-content .content-block .appliances-categories a.appliance {
     width: 17%;
     margin-left: 10.6%;
   }
-  /* line 215, ../sass/responsive.scss */
+  /* line 246, ../sass/responsive.scss */
   .main-content .content-block .appliances-categories a.appliance:first-child {
     margin-left: 0;
   }
-  /* line 219, ../sass/responsive.scss */
+  /* line 250, ../sass/responsive.scss */
   .main-content .content-block .appliances-categories a.appliance .appliance-icon {
     height: 108px;
   }
-  /* line 222, ../sass/responsive.scss */
+  /* line 253, ../sass/responsive.scss */
   .main-content .content-block .appliances-categories a.appliance .appliance-icon.washing img, .main-content .content-block .appliances-categories a.appliance .appliance-icon.dryers img {
     width: 66px;
     height: 68px;
     margin-left: -33px;
   }
-  /* line 228, ../sass/responsive.scss */
+  /* line 259, ../sass/responsive.scss */
   .main-content .content-block .appliances-categories a.appliance .appliance-icon.fridges img {
     width: 66px;
     height: 108px;
     margin-left: -33px;
   }
-  /* line 234, ../sass/responsive.scss */
+  /* line 265, ../sass/responsive.scss */
   .main-content .content-block .appliances-categories a.appliance .appliance-icon.microwaves img {
     width: 72px;
     height: 47px;
     margin-left: -36px;
   }
-  /* line 244, ../sass/responsive.scss */
+  /* line 275, ../sass/responsive.scss */
   .main-content .content-block .brands-list li {
     width: 33%;
     margin-bottom: 25px;
   }
+  /* line 281, ../sass/responsive.scss */
+  .main-content .content-block .ball-about {
+    margin-left: -90px;
+  }
 
-  /* line 255, ../sass/responsive.scss */
+  /* line 290, ../sass/responsive.scss */
   .site-footer .footer-nav {
     margin-left: 30px;
+    width: 100%;
   }
-  /* line 259, ../sass/responsive.scss */
+  /* line 295, ../sass/responsive.scss */
   .site-footer .footer-info {
     margin-left: 40px;
   }

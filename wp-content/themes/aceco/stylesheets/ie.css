@@ -1,0 +1,9 @@
+/* line 1, ../sass/ie.scss */
+h2:after, h3:after {
+  display: none;
+}
+
+/* line 5, ../sass/ie.scss */
+.site-footer .social-nav {
+  margin-top: -20px;
+}

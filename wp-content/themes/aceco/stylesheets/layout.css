@@ -154,37 +154,66 @@ body {
   width: 100%;
 }
 /* line 163, ../sass/layout.scss */
+.main-content .content-section {
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+}
+/* line 168, ../sass/layout.scss */
+.main-content .content-section:last-child {
+  margin-bottom: 0;
+}
+/* line 173, ../sass/layout.scss */
 .main-content .content-block {
   background: #FFF;
   padding: 30px 0;
   float: left;
   width: 100%;
+  overflow-x: hidden;
 }
-/* line 169, ../sass/layout.scss */
+/* line 180, ../sass/layout.scss */
 .main-content .content-block.dashed {
   background: url(../images/dashed-line.png) repeat-x left bottom #FFF;
 }
-/* line 173, ../sass/layout.scss */
+/* line 184, ../sass/layout.scss */
 .main-content .content-block.gray {
   background: #efefef;
   padding: 0 0 80px 0;
 }
-/* line 177, ../sass/layout.scss */
+/* line 188, ../sass/layout.scss */
 .main-content .content-block.gray.dashed {
   background: url(../images/dashed-line.png) repeat-x left bottom #efefef;
 }
-/* line 182, ../sass/layout.scss */
-.main-content .content-block h2 {
+/* line 193, ../sass/layout.scss */
+.main-content .content-block h2, .main-content .content-block h3:not(.black-section-title) {
   font-family: "merriweather",serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
   margin-bottom: 50px;
+  position: relative;
+  padding-bottom: 50px;
 }
-/* line 188, ../sass/layout.scss */
+/* line 200, ../sass/layout.scss */
+.main-content .content-block h2 {
+  font-size: 20px;
+}
+/* line 204, ../sass/layout.scss */
+.main-content .content-block h3 {
+  font-size: 18px;
+}
+/* line 208, ../sass/layout.scss */
+.main-content .content-block h2:after, .main-content .content-block h3:after {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 36px;
+  height: 4px;
+  background: #57c5c7;
+}
+/* line 218, ../sass/layout.scss */
 .main-content .content-block .text {
   position: relative;
-  padding-top: 20px;
   color: #939393;
   font-size: 14px;
   font-family: "merriweather",serif;
@@ -192,52 +221,35 @@ body {
   font-weight: 300;
   line-height: 24px;
 }
-/* line 196, ../sass/layout.scss */
-.main-content .content-block .text:before {
-  content: " ";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 36px;
-  height: 4px;
-  background: #57c5c7;
-}
-/* line 206, ../sass/layout.scss */
+/* line 225, ../sass/layout.scss */
 .main-content .content-block .text p {
   margin-top: 25px;
 }
-/* line 209, ../sass/layout.scss */
+/* line 228, ../sass/layout.scss */
 .main-content .content-block .text p:first-child {
   margin-top: 0;
 }
-/* line 213, ../sass/layout.scss */
-.main-content .content-block .text p strong, .main-content .content-block .text p span {
-  font-family: "proxima-nova",sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-/* line 218, ../sass/layout.scss */
-.main-content .content-block .text p a {
+/* line 232, ../sass/layout.scss */
+.main-content .content-block .text p strong, .main-content .content-block .text p span, .main-content .content-block .text p a {
   font-family: "proxima-nova",sans-serif;
   font-style: normal;
   font-weight: 600;
 }
-/* line 222, ../sass/layout.scss */
+/* line 236, ../sass/layout.scss */
 .main-content .content-block .text p strong {
   color: #000;
 }
-/* line 226, ../sass/layout.scss */
+/* line 240, ../sass/layout.scss */
 .main-content .content-block .text p span, .main-content .content-block .text p a {
   color: #57c5c7;
 }
-/* line 232, ../sass/layout.scss */
+/* line 246, ../sass/layout.scss */
 .main-content .content-block .appliances-categories {
   margin-bottom: 80px;
   float: left;
   width: 100%;
 }
-/* line 237, ../sass/layout.scss */
+/* line 251, ../sass/layout.scss */
 .main-content .content-block .appliances-categories a.appliance {
   width: 100%;
   float: left;
@@ -250,17 +262,17 @@ body {
   text-transform: uppercase;
   margin-top: 30px;
 }
-/* line 247, ../sass/layout.scss */
+/* line 261, ../sass/layout.scss */
 .main-content .content-block .appliances-categories a.appliance:first-child {
   margin-top: 0;
 }
-/* line 251, ../sass/layout.scss */
+/* line 265, ../sass/layout.scss */
 .main-content .content-block .appliances-categories a.appliance img {
   display: block;
   clear: both;
   margin: 0 auto 30px auto;
 }
-/* line 259, ../sass/layout.scss */
+/* line 273, ../sass/layout.scss */
 .main-content .content-block .black-section-title {
   background: #272727;
   text-align: center;
@@ -274,11 +286,15 @@ body {
   line-height: 44px;
   color: #FFF;
 }
-/* line 270, ../sass/layout.scss */
+/* line 284, ../sass/layout.scss */
+.main-content .content-block .black-section-title:after {
+  display: none;
+}
+/* line 288, ../sass/layout.scss */
 .main-content .content-block .black-section-title span {
   position: relative;
 }
-/* line 273, ../sass/layout.scss */
+/* line 291, ../sass/layout.scss */
 .main-content .content-block .black-section-title span:before {
   content: " ";
   position: absolute;
@@ -288,29 +304,64 @@ body {
   height: 9px;
   background: url("../images/arrow-down.png") no-repeat center center;
 }
-/* line 286, ../sass/layout.scss */
+/* line 304, ../sass/layout.scss */
 .main-content .content-block .brands-list li {
   width: 100%;
   text-align: center;
   float: left;
   margin-top: 50px;
 }
+/* line 312, ../sass/layout.scss */
+.main-content .content-block .support-phone {
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: #57c5c7;
+  font-size: 35px;
+  padding-left: 75px;
+  margin: 45px 0 55px 0;
+  float: left;
+  width: 100%;
+  position: relative;
+  line-height: 45px;
+}
+/* line 323, ../sass/layout.scss */
+.main-content .content-block .support-phone:before {
+  content: " ";
+  position: absolute;
+  left: 15px;
+  top: 3px;
+  width: 40px;
+  height: 39px;
+  background: url("../images/icon-phone-blue.png") no-repeat center center;
+}
+/* line 334, ../sass/layout.scss */
+.main-content .content-block .ball-about {
+  float: left;
+  width: 100%;
+  height: 53px;
+  margin-bottom: 50px;
+  background: url("../images/icon-bouncing-ball.png") no-repeat left center;
+  clear: both;
+  margin-left: -20px;
+  display: none;
+}
 
-/* line 299, ../sass/layout.scss */
+/* line 350, ../sass/layout.scss */
 .site-footer {
   float: left;
   width: 100%;
   padding-bottom: 50px;
 }
-/* line 304, ../sass/layout.scss */
+/* line 355, ../sass/layout.scss */
 .site-footer .wrapper {
   padding: 0;
 }
-/* line 305, ../sass/layout.scss */
+/* line 356, ../sass/layout.scss */
 .site-footer nav {
   clear: both;
 }
-/* line 307, ../sass/layout.scss */
+/* line 358, ../sass/layout.scss */
 .site-footer .social-nav {
   width: 100%;
   background: #272727;
@@ -318,13 +369,13 @@ body {
   clear: both;
   float: right;
 }
-/* line 314, ../sass/layout.scss */
+/* line 365, ../sass/layout.scss */
 .site-footer .social-nav li {
   float: left;
   width: 33%;
   height: 44px;
 }
-/* line 319, ../sass/layout.scss */
+/* line 370, ../sass/layout.scss */
 .site-footer .social-nav li a {
   display: block;
   text-align: center;
@@ -333,23 +384,27 @@ body {
   background: rgba(255, 255, 255, 0.6);
   text-indent: -99999px;
 }
-/* line 328, ../sass/layout.scss */
+/* line 379, ../sass/layout.scss */
 .site-footer .social-nav li.social-twitter a {
   background: url("../images/icon-twitter.png") no-repeat center center;
 }
-/* line 329, ../sass/layout.scss */
+/* line 380, ../sass/layout.scss */
 .site-footer .social-nav li.social-facebook a {
   background: url("../images/icon-facebook.png") no-repeat center center;
 }
-/* line 330, ../sass/layout.scss */
+/* line 381, ../sass/layout.scss */
 .site-footer .social-nav li.social-plus a {
   background: url("../images/icon-plus.png") no-repeat center center;
 }
-/* line 335, ../sass/layout.scss */
+/* line 385, ../sass/layout.scss */
+.site-footer .footer-nav {
+  display: none;
+}
+/* line 387, ../sass/layout.scss */
 .site-footer .footer-nav li {
   float: left;
 }
-/* line 338, ../sass/layout.scss */
+/* line 390, ../sass/layout.scss */
 .site-footer .footer-nav li a {
   font-family: "proxima-nova",sans-serif;
   font-style: normal;
@@ -360,7 +415,7 @@ body {
   padding: 0 10px;
   text-decoration: none;
 }
-/* line 349, ../sass/layout.scss */
+/* line 401, ../sass/layout.scss */
 .site-footer .footer-info {
   clear: both;
   margin-top: 30px;
@@ -368,7 +423,7 @@ body {
   float: left;
   width: 100%;
 }
-/* line 356, ../sass/layout.scss */
+/* line 408, ../sass/layout.scss */
 .site-footer .footer-info p, .site-footer .footer-info a {
   font-family: "proxima-nova",sans-serif;
   font-style: normal;
