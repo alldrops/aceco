@@ -24,7 +24,15 @@
 			<div class="content-block gray">
 				<h3 class="black-section-title"><span>Contact Form</span></h3>
 				<div class="content-wrapper">
-					
+					<div class="form-container">
+						<?php 
+						if ( have_posts() ) {
+							while ( have_posts() ) {
+								the_post(); 
+								the_content();
+							}
+						} ?>
+					</div>
 				</div>
 			</div>
 		</div>

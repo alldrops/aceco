@@ -135,105 +135,117 @@
     margin-left: -60px;
     margin-right: 100px;
   }
+  /* line 170, ../sass/responsive.scss */
+  .main-content .content-block .form-container {
+    padding: 75px 90px;
+  }
+  /* line 173, ../sass/responsive.scss */
+  .main-content .content-block .form-container label {
+    margin-bottom: 25px;
+  }
+  /* line 177, ../sass/responsive.scss */
+  .main-content .content-block .form-container input {
+    margin-bottom: 45px;
+  }
 
-  /* line 175, ../sass/responsive.scss */
+  /* line 187, ../sass/responsive.scss */
   .site-footer .wrapper {
     padding: 0 20px;
   }
-  /* line 179, ../sass/responsive.scss */
+  /* line 191, ../sass/responsive.scss */
   .site-footer .social-nav {
     width: 214px;
   }
-  /* line 183, ../sass/responsive.scss */
+  /* line 195, ../sass/responsive.scss */
   .site-footer .footer-nav {
     display: block;
     width: 50%;
     line-height: 30px;
   }
-  /* line 189, ../sass/responsive.scss */
+  /* line 201, ../sass/responsive.scss */
   .site-footer .footer-info {
     float: left;
     margin-left: 10px;
   }
-  /* line 193, ../sass/responsive.scss */
+  /* line 205, ../sass/responsive.scss */
   .site-footer .footer-info p {
     text-align: left;
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 206, ../sass/responsive.scss */
+  /* line 218, ../sass/responsive.scss */
   .site-header .top-bar .logo-container a {
     float: left;
   }
-  /* line 209, ../sass/responsive.scss */
+  /* line 221, ../sass/responsive.scss */
   .site-header .top-bar .delivery-phone-box span {
     font-size: 21px;
     line-height: 65px;
   }
-  /* line 214, ../sass/responsive.scss */
+  /* line 226, ../sass/responsive.scss */
   .site-header .top-bar .delivery-phone-box span.phone:before {
     left: 15px;
   }
 
-  /* line 228, ../sass/responsive.scss */
+  /* line 240, ../sass/responsive.scss */
   .main-content .content-block h2, .main-content .content-block h3 {
     max-width: 520px;
   }
-  /* line 231, ../sass/responsive.scss */
+  /* line 243, ../sass/responsive.scss */
   .main-content .content-block h2.black-section-title, .main-content .content-block h3.black-section-title {
     max-width: 100%;
   }
-  /* line 236, ../sass/responsive.scss */
+  /* line 248, ../sass/responsive.scss */
   .main-content .content-block .text {
     max-width: 630px;
   }
-  /* line 242, ../sass/responsive.scss */
+  /* line 254, ../sass/responsive.scss */
   .main-content .content-block .appliances-categories a.appliance {
     width: 17%;
     margin-left: 10.6%;
   }
-  /* line 246, ../sass/responsive.scss */
+  /* line 258, ../sass/responsive.scss */
   .main-content .content-block .appliances-categories a.appliance:first-child {
     margin-left: 0;
   }
-  /* line 250, ../sass/responsive.scss */
+  /* line 262, ../sass/responsive.scss */
   .main-content .content-block .appliances-categories a.appliance .appliance-icon {
     height: 108px;
   }
-  /* line 253, ../sass/responsive.scss */
+  /* line 265, ../sass/responsive.scss */
   .main-content .content-block .appliances-categories a.appliance .appliance-icon.washing img, .main-content .content-block .appliances-categories a.appliance .appliance-icon.dryers img {
     width: 66px;
     height: 68px;
     margin-left: -33px;
   }
-  /* line 259, ../sass/responsive.scss */
+  /* line 271, ../sass/responsive.scss */
   .main-content .content-block .appliances-categories a.appliance .appliance-icon.fridges img {
     width: 66px;
     height: 108px;
     margin-left: -33px;
   }
-  /* line 265, ../sass/responsive.scss */
+  /* line 277, ../sass/responsive.scss */
   .main-content .content-block .appliances-categories a.appliance .appliance-icon.microwaves img {
     width: 72px;
     height: 47px;
     margin-left: -36px;
   }
-  /* line 275, ../sass/responsive.scss */
+  /* line 287, ../sass/responsive.scss */
   .main-content .content-block .brands-list li {
     width: 33%;
     margin-bottom: 25px;
   }
-  /* line 281, ../sass/responsive.scss */
+  /* line 293, ../sass/responsive.scss */
   .main-content .content-block .ball-about {
     margin-left: -90px;
   }
 
-  /* line 290, ../sass/responsive.scss */
+  /* line 302, ../sass/responsive.scss */
   .site-footer .footer-nav {
     margin-left: 30px;
     width: 100%;
   }
-  /* line 295, ../sass/responsive.scss */
+  /* line 307, ../sass/responsive.scss */
   .site-footer .footer-info {
     margin-left: 40px;
   }
