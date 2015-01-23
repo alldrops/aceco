@@ -2,12 +2,26 @@
 
 <?php include("header.php"); ?>
 
+<?php
+	function get_the_slug( $id=null ){
+		if( empty($id) ):
+			global $post;
+			if( empty($post) )
+				return ''; // No global $post var available.
+			$id = $post->ID;
+		endif;
+
+		$slug = basename( get_permalink($id) );
+		return $slug;
+	}
+?>
+
 <div class="main-content">
 	<div class="wrapper">
 		<div class="content-section">
-			<div class="content-block">
+			<div class="content-block area-served-map <?php echo get_the_slug(); ?>">
 				<div class="content-wrapper">
-					<h2>Northern Beaches</h2>
+					<h2><?php the_title(); ?></h2>
 				</div>
 			</div>
 		</div>

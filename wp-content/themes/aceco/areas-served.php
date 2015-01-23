@@ -17,7 +17,11 @@
 			</div>
 			<div class="content-block gray">
 				<h3 class="black-section-title"><span>Choose your area</span></h3>
-				<div class="content-wrapper">
+				<div class="map-areas">
+					<a href="northern-beaches/" class="northern-beaches">Northern Beaches</a>
+					<a href="north-shore/" class="north-shore">North Shore</a>
+					<a href="inner-west/" class="inner-west">Inner West</a>
+					<a href="eastern-suburbs/" class="eastern-suburbs">Eastern Suburbs</a>
 				</div>
 			</div>
 			<div class="content-block dashed">
