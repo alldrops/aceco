@@ -23,7 +23,33 @@
 			</div>
 			<div class="content-block gray">
 				<h3 class="black-section-title"><span>Choose an appliance</span></h3>
-				<div class="content-wrapper">
+				<div class="content-wrapper appliances">
+					<div class="appliances-selector">
+						<a href="#" class="appliance washing">
+							<div class="appliance-icon">
+								<img src="<?php echo get_template_directory_uri(); ?>/images/icon-washing.png" alt="">
+							</div>
+							Washing Machines
+						</a>
+						<a href="#" class="appliance fridges">
+							<div class="appliance-icon">
+								<img src="<?php echo get_template_directory_uri(); ?>/images/icon-fridges.png" alt="">
+							</div>
+							Fridges
+						</a>
+						<a href="#" class="appliance dryers">
+							<div class="appliance-icon">
+								<img src="<?php echo get_template_directory_uri(); ?>/images/icon-dryers.png" alt="">
+							</div>
+							Dryers
+						</a>
+						<a href="#" class="appliance microwaves">
+							<div class="appliance-icon">
+								<img src="<?php echo get_template_directory_uri(); ?>/images/icon-microwaves.png" alt="">
+							</div>
+							Microwaves
+						</a>
+					</div>
 				</div>
 			</div>
 			<div class="content-block dashed">

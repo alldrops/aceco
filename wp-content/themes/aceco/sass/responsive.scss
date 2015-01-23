@@ -167,6 +167,38 @@
 				margin-right: 100px;
 			}
 
+			.appliances-selector {
+				margin-top: 80px;
+
+				a.appliance {
+					width: 50%;
+
+					.appliance-icon {
+						width: 100%;
+						height: 154px;
+						text-align: center;
+						position: relative;
+						margin-bottom: 80px;
+					}
+
+					img {
+						margin: 0;
+						margin-left: -47px;
+						bottom: 0;
+						left: 50%;
+						position: absolute;
+					}
+
+					&:after {
+						display: block;
+					}
+
+					&.fridges:after, &.fridges:before, &.microwaves:after {
+						display: none;
+					}
+				}
+			}
+
 			.form-container {
 				padding: 75px 90px;
 
