@@ -2,105 +2,100 @@
 
 <?php include("header.php"); ?>
 
+
+<?php while ( have_posts() ) : the_post(); ?>
+
 <div class="main-content">
 	<div class="wrapper">
 		<div class="content-section">
-			<div class="content-block">
+			<div class="content-block product-details">
 				<div class="product-wrapper">
-					<div class="product-gallery">
-						<ul>
-							<li></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="content-section products">
-			<div class="content-block">
-				<div class="product-selector">
-					<div class="product">
-						<a href="#">
-							<div class="product-image">
-								<img src="<?php echo get_template_directory_uri(); ?>/images/placeholders/placeholder-fridge.png" alt="">
-							</div>
-						</a>
-						<a href="#" class="prod-name">2 Door Fridge 350L</a>
-						<p>3 months <span>$40.00</span> p/month</p>
-						<p>6 months <span>$36.00</span> p/month</p>
-						<a href="#" class="btn-view">View</a>
-					</div>
-					<div class="product">
-						<a href="#">
-							<div class="product-image">
-								<img src="<?php echo get_template_directory_uri(); ?>/images/placeholders/placeholder-fridge.png" alt="">
-							</div>
-						</a>
-						<a href="#" class="prod-name">2 Door Fridge 300L</a>
-						<p>3 months <span>$38.00</span> p/month</p>
-						<p>6 months <span>$34.00</span> p/month</p>
-						<a href="#" class="btn-view">View</a>
-					</div>
-					<div class="product">
-						<a href="#">
-							<div class="product-image">
-								<img src="<?php echo get_template_directory_uri(); ?>/images/placeholders/placeholder-fridge.png" alt="">
-							</div>
-						</a>
-						<a href="#" class="prod-name">2 Door Fridge 250L</a>
-						<p>3 months <span>$33.00</span> p/month</p>
-						<p>6 months <span>$30.00</span> p/month</p>
-						<a href="#" class="btn-view">View</a>
-					</div>
-					<div class="product">
-						<a href="#">
-							<div class="product-image">
-								<img src="<?php echo get_template_directory_uri(); ?>/images/placeholders/placeholder-fridge.png" alt="">
-							</div>
-						</a>
-						<a href="#" class="prod-name">2 Door Fridge 200L</a>
-						<p>3 months <span>$30.00</span> p/month</p>
-						<p>6 months <span>$28.00</span> p/month</p>
-						<a href="#" class="btn-view">View</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<?php if( have_rows('content_section') ): ?>
-			<?php while( have_rows('content_section') ): the_row(); ?>
-				<div class="content-section">
-					<?php if( have_rows('content_block') ): ?>
-						<?php while( have_rows('content_block') ): the_row();
-							
-							$bgcolor = get_sub_field('block_background_color');
-							$dashed = get_sub_field('dashed_block_border');
-							$title = get_sub_field('title');
-							$block_content = get_sub_field('block_content');
-							$isDashed = '';
 
-							if ($dashed == 1)
-								$isDashed = 'dashed';
-							?>
+					<?php # main gallery ?>
 
-							<div class="content-block <?php echo $isDashed.' '.$bgcolor ?>">
-								<div class="content-wrapper">
-									<?php if( !empty($title) ): ?>
-										<h3><?php echo $title; ?></h3>
-									<?php endif; ?>
-									<?php if( !empty($block_content) ): ?>
-										<div class="text">
-											<?php echo $block_content; ?>
-										</div>
-									<?php endif; ?>
-								</div>
+					<?php if( have_rows('appliance_gallery') ): ?>
+
+						<div class="gallery-product">
+							<div class="full-image">
+								<img src="" alt="">
 							</div>
 
+							<ul id="product-slider" class="flexslider">
+								<ul class="slides">
+									<?php while( have_rows('appliance_gallery') ): the_row();
+										$image = get_sub_field('image');
+									?>
+
+									<li><img src="<?php $print_image = wp_get_attachment_image_src( $image, 'full' ); echo $print_image[0]; ?>"></li>
+									<?php endwhile; ?>
+								</ul>
+							</ul>
+						</div>
+
+					<?php endif; ?>
+
+					<?php ################ ?>
+
+
+					<?php # rental content ?>
+
+					<div class="rental-container">
+						
+					</div>
+					
+					<?php ################ ?>
+
+
+					<?php # main content ?>
+
+
+					<h2><?php the_field('name'); ?></h2>
+					<?php 
+				    $top_desc = get_field('description', $post->ID);
+				    if( !empty($top_desc) ): ?>
+					        
+						<div class="text">
+							<?php echo $top_desc; ?>
+						</div>
+					<?php endif; ?>
+
+					<?php ################ ?>					
+
+
+
+					<?php # extra content ?>
+
+					<?php if( have_rows('appliance_content') ): ?>
+						<?php while( have_rows('appliance_content') ): the_row();
+							$subtitle = get_sub_field('title');
+							$subdescription = get_sub_field('description');
+						
+						if(!empty($subtitle)): ?>
+							<h2><?php echo $subtitle; ?></h2>
+						<?php endif; 
+						if(!empty($subdescription)): ?>
+							<div class="text">
+								<?php echo $subdescription; ?>
+							</div>
+						<?php endif; ?>
+						
 						<?php endwhile; ?>
 					<?php endif; ?>
+
+					<?php ################ ?>
 				</div>
-			<?php endwhile; ?>
-		<?php endif; ?>
+			</div>
+		</div>
 	</div>
 </div>
+<?php endwhile; ?>
 
-<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/libs/owl.carousel.min.js"></script>
 <?php include("footer.php"); ?>
+
+<script type="text/javascript">
+	$.each($('#menu-main-navigation li'), function(item, i){
+		if($(this).find('a').text() == 'Appliances') {
+			$(this).addClass('current_page_parent');
+		}
+	});
+</script>

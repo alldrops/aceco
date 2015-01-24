@@ -1,431 +1,147 @@
-@media only screen and (min-width: 400px) {
-  /* line 4, ../sass/responsive.scss */
-  .main-content .content-block .ball-about {
-    display: block;
-  }
-}
-@media only screen and (min-width: 480px) {
-  /* line 18, ../sass/responsive.scss */
-  .site-header .top-bar .delivery-phone-box span {
-    font-size: 16px;
-    padding: 10px 0 10px 30px;
-  }
-  /* line 23, ../sass/responsive.scss */
-  .site-header .top-bar .delivery-phone-box span.delivery:before {
-    top: 14px;
-    width: 20px;
-    height: 22px;
-  }
-  /* line 31, ../sass/responsive.scss */
-  .site-header .top-bar .delivery-phone-box span.phone:before {
-    top: 15px;
-    width: 20px;
-    height: 20px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  /* line 49, ../sass/responsive.scss */
-  .site-header .top-bar .wrapper {
-    padding: 0 20px;
-  }
-  /* line 53, ../sass/responsive.scss */
-  .site-header .top-bar .logo-container {
-    width: 280px;
-  }
-  /* line 57, ../sass/responsive.scss */
-  .site-header .top-bar .delivery-phone-box {
-    padding: 0;
-  }
-  /* line 60, ../sass/responsive.scss */
-  .site-header .top-bar .delivery-phone-box span {
-    font-size: 14px;
-    padding: 10px 0 10px 57px;
-    line-height: 65px;
-  }
-  /* line 65, ../sass/responsive.scss */
-  .site-header .top-bar .delivery-phone-box span.delivery {
-    margin-left: 54px;
-  }
-  /* line 67, ../sass/responsive.scss */
-  .site-header .top-bar .delivery-phone-box span.delivery:before {
-    top: 25px;
-    width: 35px;
-    height: 38px;
-  }
-  /* line 75, ../sass/responsive.scss */
-  .site-header .top-bar .delivery-phone-box span.phone:before {
-    top: 30px;
-    width: 27px;
-    height: 27px;
-  }
+/*
+Error: Undefined mixin 'proxima-nova-semibold'.
+        on line 320 of C:/wamp/www/aceco/wp-content/themes/aceco/sass/responsive.scss, in `proxima-nova-semibold'
+        from line 320 of C:/wamp/www/aceco/wp-content/themes/aceco/sass/responsive.scss
 
-  /* line 89, ../sass/responsive.scss */
-  .main-content .content-block {
-    padding: 70px 0;
-  }
-  /* line 92, ../sass/responsive.scss */
-  .main-content .content-block.gray {
-    padding: 0 0 70px 0;
-  }
-  /* line 96, ../sass/responsive.scss */
-  .main-content .content-block.block-ball {
-    display: block;
-    margin-bottom: -120px;
-  }
-  /* line 104, ../sass/responsive.scss */
-  .main-content .content-block.blog-post .post-navigation a {
-    width: 158px;
-  }
-  /* line 107, ../sass/responsive.scss */
-  .main-content .content-block.blog-post .post-navigation a.next-post {
-    float: left;
-    margin-left: 20px;
-  }
-  /* line 112, ../sass/responsive.scss */
-  .main-content .content-block.blog-post .post-navigation a.prev-post {
-    float: right;
-    margin-right: 20px;
-  }
-  /* line 122, ../sass/responsive.scss */
-  .main-content .content-block.blog-posts-listing .post h3 {
-    font-size: 30px;
-  }
-  /* line 126, ../sass/responsive.scss */
-  .main-content .content-block.blog-posts-listing .post .post-info-title {
-    margin-top: -65px;
-  }
-  /* line 129, ../sass/responsive.scss */
-  .main-content .content-block.blog-posts-listing .post .post-info-title p {
-    font-size: 16px;
-  }
-  /* line 133, ../sass/responsive.scss */
-  .main-content .content-block.blog-posts-listing .post .excerpt {
-    margin-top: 20px;
-  }
-  /* line 136, ../sass/responsive.scss */
-  .main-content .content-block.blog-posts-listing .post .excerpt p {
-    font-size: 16px;
-  }
-  /* line 143, ../sass/responsive.scss */
-  .main-content .content-block h2 {
-    font-size: 38px;
-    margin-bottom: 30px;
-    line-height: 50px;
-  }
-  /* line 149, ../sass/responsive.scss */
-  .main-content .content-block h3:not(.black-section-title) {
-    font-size: 30px;
-    margin-bottom: 30px;
-    line-height: 45px;
-  }
-  /* line 155, ../sass/responsive.scss */
-  .main-content .content-block .text {
-    font-size: 16px;
-    line-height: 26px;
-  }
-  /* line 160, ../sass/responsive.scss */
-  .main-content .content-block .appliances-categories {
-    margin-bottom: -50px;
-  }
-  /* line 164, ../sass/responsive.scss */
-  .main-content .content-block .appliances-categories a.appliance {
-    width: 50%;
-    margin-bottom: 30px;
-    margin-top: 0;
-  }
-  /* line 169, ../sass/responsive.scss */
-  .main-content .content-block .appliances-categories a.appliance .appliance-icon {
-    width: 100%;
-    height: 154px;
-    text-align: center;
-    position: relative;
-    margin-bottom: 45px;
-  }
-  /* line 177, ../sass/responsive.scss */
-  .main-content .content-block .appliances-categories a.appliance img {
-    margin: 0;
-    margin-left: -47px;
-    bottom: 0;
-    left: 50%;
-    position: absolute;
-  }
-  /* line 187, ../sass/responsive.scss */
-  .main-content .content-block .black-section-title {
-    margin-bottom: 25px;
-  }
-  /* line 192, ../sass/responsive.scss */
-  .main-content .content-block .brands-list li {
-    height: 90px;
-    width: 50%;
-    text-align: center;
-    white-space: nowrap;
-  }
-  /* line 198, ../sass/responsive.scss */
-  .main-content .content-block .brands-list li:before, .main-content .content-block .brands-list li.li_before {
-    content: "";
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-  }
-  /* line 206, ../sass/responsive.scss */
-  .main-content .content-block .brands-list li img {
-    vertical-align: middle;
-    max-height: 90px;
-    max-width: 243px;
-  }
-  /* line 214, ../sass/responsive.scss */
-  .main-content .content-block .ball-about {
-    margin-left: -60px;
-    margin-right: 100px;
-  }
-  /* line 219, ../sass/responsive.scss */
-  .main-content .content-block .appliances-selector {
-    margin-top: 80px;
-  }
-  /* line 222, ../sass/responsive.scss */
-  .main-content .content-block .appliances-selector a.appliance {
-    width: 49.8%;
-    border-right: 1px dashed #dddddd;
-  }
-  /* line 226, ../sass/responsive.scss */
-  .main-content .content-block .appliances-selector a.appliance .appliance-icon {
-    width: 100%;
-    height: 154px;
-    text-align: center;
-    position: relative;
-    margin-bottom: 80px;
-  }
-  /* line 234, ../sass/responsive.scss */
-  .main-content .content-block .appliances-selector a.appliance img {
-    margin: 0;
-    margin-left: -47px;
-    bottom: 0;
-    left: 50%;
-    position: absolute;
-  }
-  /* line 242, ../sass/responsive.scss */
-  .main-content .content-block .appliances-selector a.appliance:nth-child(even) {
-    border-right: none;
-  }
-  /* line 246, ../sass/responsive.scss */
-  .main-content .content-block .appliances-selector a.appliance.fridges {
-    border-top: none;
-  }
-  /* line 254, ../sass/responsive.scss */
-  .main-content .content-block .product-selector .product {
-    width: 49.8%;
-    border-right: 1px dashed #dddddd;
-  }
-  /* line 258, ../sass/responsive.scss */
-  .main-content .content-block .product-selector .product .product-image {
-    width: 100%;
-    height: 320px;
-    text-align: center;
-    position: relative;
-    margin-bottom: 80px;
-  }
-  /* line 265, ../sass/responsive.scss */
-  .main-content .content-block .product-selector .product .product-image img {
-    margin: 0;
-    margin-left: -47px;
-    bottom: 0;
-    left: 50%;
-    position: absolute;
-  }
-  /* line 274, ../sass/responsive.scss */
-  .main-content .content-block .product-selector .product:nth-child(2) {
-    border-top: none;
-  }
-  /* line 278, ../sass/responsive.scss */
-  .main-content .content-block .product-selector .product:nth-child(even) {
-    border-right: none;
-  }
-  /* line 284, ../sass/responsive.scss */
-  .main-content .content-block .form-container {
-    padding: 75px 90px;
-  }
-  /* line 287, ../sass/responsive.scss */
-  .main-content .content-block .form-container label {
-    margin-bottom: 25px;
-  }
-  /* line 291, ../sass/responsive.scss */
-  .main-content .content-block .form-container input {
-    margin-bottom: 45px;
-  }
-  /* line 298, ../sass/responsive.scss */
-  .main-content .content-block.reviews-listing .hreview {
-    width: 49.8%;
-    border-right: 1px dashed #dddddd;
-  }
-  /* line 302, ../sass/responsive.scss */
-  .main-content .content-block.reviews-listing .hreview .description {
-    font-size: 18px;
-  }
-  /* line 304, ../sass/responsive.scss */
-  .main-content .content-block.reviews-listing .hreview .description a {
-    font-size: 18px;
-    text-transform: uppercase;
-    float: left;
-    width: 100%;
-    margin-top: 25px;
-  }
-  /* line 313, ../sass/responsive.scss */
-  .main-content .content-block.reviews-listing .hreview:nth-child(even) {
-    border-right: none;
-  }
-  /* line 317, ../sass/responsive.scss */
-  .main-content .content-block.reviews-listing .hreview:nth-child(2) {
-    border-top: none;
-  }
-  /* line 322, ../sass/responsive.scss */
-  .main-content .content-block.reviews-listing #wpcr_respond_1 a#wpcr_button_1, .main-content .content-block.reviews-listing #wpcr_respond_2 a#wpcr_button_1, .main-content .content-block.reviews-listing hr {
-    display: none !important;
-  }
+315: 				position: relative;
+316: 				margin-top: 55px;
+317: 
+318: 				a {
+319: 					position: absolute;
+320: 					@include proxima-nova-semibold;
+321: 					font-size: 16px;
+322: 					color: #000;
+323: 					background: url('../images/map-marker.png') no-repeat center center;
+324: 					text-transform: uppercase;
+325: 					text-align: center;
 
-  /* line 334, ../sass/responsive.scss */
-  .site-footer .wrapper {
-    padding: 0 20px;
-  }
-  /* line 338, ../sass/responsive.scss */
-  .site-footer .social-nav {
-    width: 214px;
-  }
-  /* line 342, ../sass/responsive.scss */
-  .site-footer .footer-nav {
-    display: block;
-    width: 50%;
-    line-height: 30px;
-  }
-  /* line 348, ../sass/responsive.scss */
-  .site-footer .footer-info {
-    float: left;
-    margin-left: 10px;
-  }
-  /* line 352, ../sass/responsive.scss */
-  .site-footer .footer-info p {
-    text-align: left;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  /* line 365, ../sass/responsive.scss */
-  .site-header .top-bar .logo-container a {
-    float: left;
-  }
-  /* line 368, ../sass/responsive.scss */
-  .site-header .top-bar .delivery-phone-box span {
-    font-size: 21px;
-    line-height: 65px;
-  }
-  /* line 373, ../sass/responsive.scss */
-  .site-header .top-bar .delivery-phone-box span.phone:before {
-    left: 15px;
-  }
-
-  /* line 387, ../sass/responsive.scss */
-  .main-content .content-block h2, .main-content .content-block h3 {
-    max-width: 520px;
-  }
-  /* line 390, ../sass/responsive.scss */
-  .main-content .content-block h2.black-section-title, .main-content .content-block h3.black-section-title {
-    max-width: 100%;
-  }
-  /* line 395, ../sass/responsive.scss */
-  .main-content .content-block .text {
-    max-width: 630px;
-  }
-  /* line 401, ../sass/responsive.scss */
-  .main-content .content-block .appliances-categories a.appliance {
-    width: 17%;
-    margin-left: 10.6%;
-  }
-  /* line 405, ../sass/responsive.scss */
-  .main-content .content-block .appliances-categories a.appliance:first-child {
-    margin-left: 0;
-  }
-  /* line 409, ../sass/responsive.scss */
-  .main-content .content-block .appliances-categories a.appliance .appliance-icon {
-    height: 108px;
-  }
-  /* line 412, ../sass/responsive.scss */
-  .main-content .content-block .appliances-categories a.appliance .appliance-icon.washing img, .main-content .content-block .appliances-categories a.appliance .appliance-icon.dryers img {
-    width: 66px;
-    height: 68px;
-    margin-left: -33px;
-  }
-  /* line 418, ../sass/responsive.scss */
-  .main-content .content-block .appliances-categories a.appliance .appliance-icon.fridges img {
-    width: 66px;
-    height: 108px;
-    margin-left: -33px;
-  }
-  /* line 424, ../sass/responsive.scss */
-  .main-content .content-block .appliances-categories a.appliance .appliance-icon.microwaves img {
-    width: 72px;
-    height: 47px;
-    margin-left: -36px;
-  }
-  /* line 434, ../sass/responsive.scss */
-  .main-content .content-block .brands-list li {
-    width: 33%;
-    margin-bottom: 25px;
-  }
-  /* line 440, ../sass/responsive.scss */
-  .main-content .content-block .ball-about {
-    margin-left: -90px;
-  }
-  /* line 445, ../sass/responsive.scss */
-  .main-content .content-block.blog-post .post-navigation {
-    position: absolute;
-    right: 20px;
-    top: 75px;
-    width: 160px;
-    margin-top: 0;
-  }
-  /* line 453, ../sass/responsive.scss */
-  .main-content .content-block.blog-post .post-navigation a.prev-post, .main-content .content-block.blog-post .post-navigation a.next-post {
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-  /* line 461, ../sass/responsive.scss */
-  .main-content .content-block.blog-post .social-share {
-    display: block;
-  }
-  /* line 467, ../sass/responsive.scss */
-  .main-content .content-block.blog-posts-listing .post {
-    padding: 60px 90px;
-    width: 49.8%;
-    border-right: 1px dashed #ddd;
-  }
-  /* line 472, ../sass/responsive.scss */
-  .main-content .content-block.blog-posts-listing .post:nth-child(2) {
-    border-top: none;
-  }
-  /* line 476, ../sass/responsive.scss */
-  .main-content .content-block.blog-posts-listing .post:nth-child(even) {
-    border-right: none;
-  }
-  /* line 482, ../sass/responsive.scss */
-  .main-content .content-block .container-form {
-    width: 355px;
-    float: none;
-    display: block;
-    margin: 20px auto -50px auto;
-  }
-  /* line 489, ../sass/responsive.scss */
-  .main-content .content-block .write-review {
-    position: absolute;
-    right: -70px;
-    top: 5px;
-  }
-
-  /* line 500, ../sass/responsive.scss */
-  .site-footer .footer-nav {
-    margin-left: 30px;
-    width: 100%;
-  }
-  /* line 505, ../sass/responsive.scss */
-  .site-footer .footer-info {
-    margin-left: 40px;
-  }
-}
+Backtrace:
+C:/wamp/www/aceco/wp-content/themes/aceco/sass/responsive.scss:320:in `proxima-nova-semibold'
+C:/wamp/www/aceco/wp-content/themes/aceco/sass/responsive.scss:320
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:338:in `visit_mixin'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/stack.rb:98:in `with_mixin'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/stack.rb:98:in `with_mixin'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:336:in `visit_mixin'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `send'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `visit_rule'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `map'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `visit_rule'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `send'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `visit_rule'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `map'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `visit_rule'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `send'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `visit_rule'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `map'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `visit_rule'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `send'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `visit_rule'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `map'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `visit_rule'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `send'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:167:in `visit_children'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:502:in `visit_media'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `send'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:167:in `visit_children'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `send'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:157:in `visit'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:8:in `send'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/tree/root_node.rb:20:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/engine.rb:268:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:215:in `update_stylesheets'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:328:in `watch'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/vendor/listen/lib/listen/listener.rb:252:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/vendor/listen/lib/listen/listener.rb:290:in `initialize_adapter'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/vendor/listen/lib/listen/adapter.rb:299:in `start_poller'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/vendor/listen/lib/listen/adapter.rb:299:in `initialize'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/vendor/listen/lib/listen/adapter.rb:299:in `new'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/vendor/listen/lib/listen/adapter.rb:299:in `start_poller'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/vendor/listen/lib/listen/adapter.rb:101:in `start'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/vendor/listen/lib/listen/adapter.rb:109:in `start!'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/vendor/listen/lib/listen/listener.rb:66:in `start!'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:405:in `listen_to'
+C:/Ruby187/lib/ruby/gems/1.8/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:338:in `watch'
+C:/Ruby187/lib/ruby/gems/1.8/gems/compass-1.0.1/lib/compass/sass_compiler.rb:46:in `watch!'
+C:/Ruby187/lib/ruby/gems/1.8/gems/compass-1.0.1/lib/compass/commands/watch_project.rb:41:in `perform'
+C:/Ruby187/lib/ruby/gems/1.8/gems/compass-1.0.1/lib/compass/commands/base.rb:18:in `execute'
+C:/Ruby187/lib/ruby/gems/1.8/gems/compass-1.0.1/lib/compass/commands/project_base.rb:19:in `execute'
+C:/Ruby187/lib/ruby/gems/1.8/gems/compass-1.0.1/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+C:/Ruby187/lib/ruby/gems/1.8/gems/compass-1.0.1/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+C:/Ruby187/lib/ruby/gems/1.8/gems/compass-1.0.1/bin/compass:30
+C:/Ruby187/lib/ruby/gems/1.8/gems/compass-1.0.1/bin/compass:44:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/compass-1.0.1/bin/compass:44
+C:/Ruby187/bin/compass:23:in `load'
+C:/Ruby187/bin/compass:23
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'proxima-nova-semibold'.\A         on line 320 of C:/wamp/www/aceco/wp-content/themes/aceco/sass/responsive.scss, in `proxima-nova-semibold'\A         from line 320 of C:/wamp/www/aceco/wp-content/themes/aceco/sass/responsive.scss\A \A 315: 				position: relative;\A 316: 				margin-top: 55px;\A 317: \A 318: 				a {\A 319: 					position: absolute;\A 320: 					@include proxima-nova-semibold;\A 321: 					font-size: 16px;\A 322: 					color: #000;\A 323: 					background: url('../images/map-marker.png') no-repeat center center;\A 324: 					text-transform: uppercase;\A 325: 					text-align: center;"; }

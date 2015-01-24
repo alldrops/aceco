@@ -16,6 +16,7 @@
 	<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico" type="image/x-icon">
 	<title><?php wp_title( '| ACECO Rentals', true, 'right' ); ?></title>
 	<?php wp_head(); ?>
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/flexslider.css">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/stylesheets/app.css">
 	<!--[if lt IE 9]>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/libs/respond.js"></script>

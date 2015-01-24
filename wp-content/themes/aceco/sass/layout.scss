@@ -104,8 +104,6 @@ body {
 				}
 
 				&.phone {
-					text-align: right;
-					float: right;
 
 					&:before {
 						content: " ";
@@ -128,6 +126,7 @@ body {
 		float: left;
 		width: 100%;
 		margin-bottom: 15px;
+		display: none;
 
 		li {
 			padding: 0 25px;
@@ -161,6 +160,56 @@ body {
 			@include proxima-nova-semibold;
 			border-bottom: 2px solid #000;
 		}
+	}
+
+	.mobile-nav {
+		display: block;
+	    margin: 0 auto;
+	    padding-bottom: 30px;
+
+		.menu-icon {
+		    position:relative;
+		    width:60px;
+		    text-indent:-999px;
+		    height:30px;
+		    border-top:10px solid $dark-gray;
+		    border-bottom:10px solid $dark-gray;
+		    display: block;
+		    margin: 0 auto;
+		    clear: both;
+
+		    &:before {
+				content:"";
+				position:absolute; 
+				top:10px;
+				left:0;
+				width:100%;
+				border-top:10px solid $dark-gray;
+			}
+		}
+
+		ul {
+			padding: 25px 0;
+			float: left;
+			width: 100%;
+			display: none;
+		}
+
+		li {
+			float: left;
+			width: 100%;
+			margin-bottom: 10px;
+			text-align: center;
+
+			a {
+				@include proxima-nova-semibold;
+				font-size: 16px;
+				text-transform: uppercase;
+				text-align: center;
+				color: #000;
+			}
+		}
+
 	}
 }
 
@@ -393,6 +442,95 @@ body {
 					float: left;
 					width: 100%;
 					margin-top: 15px;
+				}
+			}
+		}
+
+		&.product-details {
+			h2 {
+				@include proxima-nova-semibold;
+				color: $dark-gray;
+				font-size: 18px;
+				text-transform: uppercase;
+				margin-top: 45px;
+				float: left;
+				clear: both;
+				width: 100%;
+				margin-bottom: 0;
+				padding-bottom: 0;
+
+				&:after {
+					display: none;
+				}
+			}
+
+			.text {
+				clear: both;
+			}
+
+			p {
+				@include merriweather-light;
+				color: $light-gray;
+				font-size: 16px;
+				margin-top: 30px;
+			}
+
+			.gallery-product {
+				float: left;
+				width:575px;
+				height: 430px;
+				position: relative;
+
+				.full-image {
+					float: left;
+					width: 430px;
+					height: 430px;
+					background: $light-gray;
+					position: relative;
+
+					img {
+						display: block;
+						margin: 0 auto;
+					}
+				}
+
+				.flexslider {
+					float: right;
+					width: 120px;
+					height: 250px;
+					border: none;
+					border-radius: 0;
+					box-shadow: none;
+					margin-top: 90px;
+
+					.flex-viewport {
+						height: 250px;
+					}
+
+					li {
+						float: left;
+						width: 120px;
+						height: 120px;
+						display: block;
+
+						img {
+							max-width: 100%;
+							max-height: 100%;
+							height: 100%;
+							width: auto;
+							display: block;
+							margin: 0 auto;
+						}
+					}
+
+					.flex-direction-nav a {
+						text-indent: -99999px;
+						width: 27px;
+						height: 14px;
+						
+						&.flex-prev { background: url('../images/arrow-up-black.png') no-repeat center center; top: -20px; left: 45px;}
+						&.flex-next { background: url('../images/arrow-down-black.png') no-repeat center center; top: 165px; left: 45px;}
+					}
 				}
 			}
 		}
@@ -795,91 +933,63 @@ body {
 		.map-areas {
 			float: left;
 			width: 100%;
-			background: url('../images/map.jpg') no-repeat center center #FFF;
-			width: 1060px;
-			height: 711px;
+			background: #FFF;
 			position: relative;
 			margin-top: 55px;
 
 			a {
-				position: absolute;
+				float: left;
+				position: relative;
+				width: 100%;
+				text-align: center;
+				height: 44px;
+				line-height: 44px;
 				@include proxima-nova-semibold;
 				font-size: 16px;
-				color: #000;
-				background: url('../images/map-marker.png') no-repeat center center;
+				color: $blue;
+				background: #FFF;
 				text-transform: uppercase;
-				text-align: center;
-				line-height: 22px;
-				width: 143px;
 				-webkit-transition: all 0.2s linear;
 				-moz-transition: all 0.2s linear;
 				-ms-transition: all 0.2s linear;
 				-o-transition: all 0.2s linear;
 				transition: all 0.2s linear;
 
-				&.northern-beaches {
-					left: 483px;
-					top: 49px;
-					height: 46px;
-					padding: 15px 0;
-				}
-
-				&.north-shore {
-					left: 340px;
-					top: 281px;
-					height: 26px;
-					padding: 25px 0;
-				}
-
-				&.inner-west {
-					left: 118px;
-					top: 502px;
-					height: 26px;
-					padding: 25px 0;
-				}
-
-				&.eastern-suburbs {
-					left: 483px;
-					top: 589px;
-					height: 46px;
-					padding: 15px 0;
+				&.northern-beaches, &.north-shore, &.inner-west, &.eastern-suburbs {
+					top: auto;
+					left: auto;
+					right: auto;
+					bottom: auto;
 				}
 
 				&:hover {
 					background: $dark-gray;
-					color: #FFF;
-					
-					&:after {
-						background: url('../images/tooltip-arrow-hover.png') no-repeat center center;
-						bottom: -11px;
-					}
-				}
-
-				&:after {
-					content: " ";
-					position: absolute;
-					right: 17px;
-					bottom: -12px;
-					width: 27px;
-					height: 13px;
-					background: url('../images/tooltip-arrow.png') no-repeat center center;
-					-webkit-transition: background 0.2s linear;
-					-moz-transition: background 0.2s linear;
-					-ms-transition: background 0.2s linear;
-					-o-transition: background 0.2s linear;
-					transition: background 0.2s linear;
 				}
 			}
 		}
 
-		.product-gallery {
+		// Product Details page
+
+		.owl-carousel {
 			float: left;
 			width: 100%;
 			height: 300px;
 			background: $light-gray;
+			overflow: hidden;
+			position: relative;
+			z-index: 30;
 
 			img {
+				display: block;
+				max-height: 300px;
+				max-width: 100%;
+				width: auto;
+				height: auto;
+				margin: 0 auto;
+			}
 
+			&#sync2 {
+				display: none;
 			}
 		}
 

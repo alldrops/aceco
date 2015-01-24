@@ -32,10 +32,8 @@
 		<div class="content-section">
 			<div class="content-block">
 				<div class="content-wrapper">     
-					<div class="text"
->						<p>
-							<?php echo $top_desc; ?>
-						</p>
+					<div class="text">
+						<?php echo $top_desc; ?>
 					</div>
 				</div>
 			</div>
@@ -45,25 +43,25 @@
 			<div class="content-block">
 				<div class="content-wrapper">
 					<div class="appliances-categories">
-						<a href="#" class="appliance">
+						<a href="appliances/washing-machines/" class="appliance">
 							<div class="appliance-icon washing">
 								<img src="<?php echo get_template_directory_uri(); ?>/images/icon-washing.png" alt="">
 							</div>
 							Washing Machines
 						</a>
-						<a href="#" class="appliance">
+						<a href="appliances/fridges/" class="appliance">
 							<div class="appliance-icon fridges">
 								<img src="<?php echo get_template_directory_uri(); ?>/images/icon-fridges.png" alt="">
 							</div>
 							Fridges
 						</a>
-						<a href="#" class="appliance">
+						<a href="appliances/dryers/" class="appliance">
 							<div class="appliance-icon dryers">
 								<img src="<?php echo get_template_directory_uri(); ?>/images/icon-dryers.png" alt="">
 							</div>
 							Dryers
 						</a>
-						<a href="#" class="appliance">
+						<a href="appliances/microwaves/" class="appliance">
 							<div class="appliance-icon microwaves">
 								<img src="<?php echo get_template_directory_uri(); ?>/images/icon-microwaves.png" alt="">
 							</div>

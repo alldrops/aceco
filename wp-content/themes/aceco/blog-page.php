@@ -15,9 +15,7 @@
 					    if( !empty($top_desc) ): ?>
 						        
 							<div class="text">
-								<p>
-									<?php echo $top_desc; ?>
-								</p>
+								<?php echo $top_desc; ?>
 							</div>
 						<?php endif; ?>
 					</div>
