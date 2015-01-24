@@ -235,6 +235,168 @@ body {
 			}
 		}
 
+		.post-info-title {
+			float: left;
+			margin-top: -105px;
+			width: 100%;
+			position: relative;
+			z-index: 10;
+
+			p {
+				@include proxima-nova-semibold;
+				font-size: 16px;
+				color: $blue;
+				letter-spacing: 2px;
+				float: left;
+				position: relative;
+				margin-right: 25px;
+				margin-bottom: 10px;
+
+				&.time {
+					padding-left: 40px;
+
+					&:before {
+						content: " ";
+						position: absolute;
+						left: 0;
+						top: -2px;
+						width: 26px;
+						height: 20px;
+						background: url('../images/icon-book-blog.png') no-repeat center center;
+					}
+				}
+			}
+		}
+
+		&.blog-post {
+
+			h2 {
+				padding-bottom: 105px;
+			}
+
+
+			.post-navigation {
+				z-index: 20;
+				float: left;
+				width: 100%;
+				margin-top: 75px;
+
+				a {
+					display: block;
+					width: 90%;
+					margin: 0 auto;
+					height: 42px;
+					background: $dark-gray;
+					color: #FFF;
+					@include proxima-nova-semibold;
+					line-height: 44px;
+					text-align: center;
+					margin-bottom: 20px;
+					text-transform: uppercase;
+					border: 1px solid $dark-gray;
+					-webkit-transition: all 0.2s linear;
+					-moz-transition: all 0.2s linear;
+					-ms-transition: all 0.2s linear;
+					-o-transition: all 0.2s linear;
+					transition: all 0.2s linear;
+
+					&:hover {
+						color: #000;
+						background: #FFF;
+					}
+				}
+			}
+
+			.social-share {
+				position: absolute;
+				right: 100px;
+				top: 220px;
+				z-index: 30;
+				width: 36px;
+				display: none;
+
+				a {
+					float: left;
+					width: 100%;
+					height: 33px;
+					display: block;
+					margin-bottom: 45px;
+
+					&.twitter { background: url('../images/icon-twitter-blue.png') no-repeat center center; }
+					&.facebook { background: url('../images/icon-facebook-blue.png') no-repeat center center; }
+					&.plus { background: url('../images/icon-plus-blue.png') no-repeat center center; }
+				}
+			}
+
+			.author {
+				@include proxima-nova-semibold;
+				font-size: 14px;
+				color: #000;
+				text-transform: uppercase;
+				float: left;
+				width: 100%;
+				margin-top: 50px;
+			}
+		}
+
+		&.blog-posts-listing {
+			padding: 0;
+			.post {
+				float: left;
+				width: 100%;
+				padding: 20px;
+				border-top: 1px dashed #dddddd;
+
+				&:first-child {
+					border-top: none;
+				}
+
+				h3 {
+					font-size: 20px;
+
+					&:after {
+						display: none;
+					}
+
+					a {
+						color: #000;
+					}
+				}
+
+				.post-info-title {
+					margin-top: -85px;
+
+					p {
+						font-size: 14px;
+					}
+				}
+
+				.excerpt {
+					float: left;
+					width: 100%;
+					margin-top: 40px;
+
+					p {
+						@include merriweather-light;
+						font-size: 14px;
+						color: $light-gray;
+						line-height: 24px;
+					}
+				}
+
+				a.read-more {
+					@include proxima-nova-semibold;
+					font-size: 14px;
+					color: #000;
+					text-transform: uppercase;
+					display: block;
+					float: left;
+					width: 100%;
+					margin-top: 15px;
+				}
+			}
+		}
+
 		h2, h3:not(.black-section-title) {
 			@include merriweather-bold;
 			margin-bottom: 50px;
@@ -511,6 +673,42 @@ body {
 					}
 				}
 
+			}
+		}
+
+		.container-form {
+			width: 100%;
+			border: 1px solid #c4c4c4;
+			float: left;
+			border-radius: 3px;
+			height: 44px;
+			margin-top: 20px;
+			margin-bottom: -50px;
+
+			input[type="search"] {
+				height: 42px;
+				padding-left: 15px;
+				width: 75%;
+				background: none;
+				border: none;
+				outline: none;
+				@include proxima-nova-light;
+				font-size: 16px;
+				text-transform: uppercase;
+				color: $light-gray;
+			}
+
+			input[type="submit"] {
+				float: right;
+				width: 24px;
+				height: 25px;
+				border: none;
+				background: url('../images/icon-search.png') no-repeat center center transparent;
+				text-indent: -99999px;
+				cursor: pointer;
+				margin-top: 8px;
+				margin-right: 15px;
+				outline: none;
 			}
 		}
 

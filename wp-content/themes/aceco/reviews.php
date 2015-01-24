@@ -1,4 +1,4 @@
-<?php /* Template Name: Blog */ ?>
+<?php /* Template Name: Reviews */ ?>
 
 <?php include("header.php"); ?>
 
@@ -24,11 +24,8 @@
 				</div>
 			<?php endwhile; ?>
 
-			<div class="content-block gray">
-				<div class="content-wrapper">
-					<?php get_search_form(); ?>
-				</div>
-			</div>
+		</div>
+		<div class="content-section">
 			<div class="content-block blog-posts-listing">
 				
 				<?php 
