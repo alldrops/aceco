@@ -23,19 +23,22 @@
 					<?php endif; ?>
 				</div>
 			</div>
-			<div class="content-block gray">
-				<h3 class="black-section-title"><span>Our Brands</span></h3>
-				<div class="content-wrapper">
-					<ul class="brands-list">
-						<li><img src="<?php echo get_template_directory_uri(); ?>/images/placeholders/placeholder-lg.png"></li>
-						<li><img src="<?php echo get_template_directory_uri(); ?>/images/placeholders/placeholder-westinghouse.png"></li>
-						<li><img src="<?php echo get_template_directory_uri(); ?>/images/placeholders/placeholder-kelvinator.png"></li>
-						<li><img src="<?php echo get_template_directory_uri(); ?>/images/placeholders/placeholder-daevoo.png"></li>
-						<li><img src="<?php echo get_template_directory_uri(); ?>/images/placeholders/placeholder-simpson.png"></li>
-						<li><img src="<?php echo get_template_directory_uri(); ?>/images/placeholders/placeholder-samsung.png"></li>
-					</ul>
+
+			<?php if( have_rows('brands_list') ): ?>
+				<div class="content-block gray">
+					<h3 class="black-section-title"><span>Our Brands</span></h3>
+					<div class="content-wrapper">
+						<ul class="brands-list">
+							<?php while( have_rows('brands_list') ): the_row();
+								$image = $image = get_sub_field('logo');
+							?>
+
+								<li><img src="<?php $print_image = wp_get_attachment_image_src( $image, 'full' ); echo $print_image[0]; ?>"></li>
+							<?php endwhile; ?>
+						</ul>
+					</div>
 				</div>
-			</div>
+			<?php endif; ?>
 			<div class="content-block">
 				<div class="content-wrapper">
 					<div class="appliances-categories">
