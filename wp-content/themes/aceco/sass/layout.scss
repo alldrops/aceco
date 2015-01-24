@@ -538,6 +538,86 @@ body {
 			}
 		}
 
+		
+		// REVIEWS STYLING
+
+		.write-review {
+			height: 44px;
+			line-height: 44px;
+			padding: 0 25px;
+			background: $dark-gray;
+			@include proxima-nova-semibold;
+			text-transform: uppercase;
+			color: #FFF;
+			position: relative;
+			display: block;
+			right: auto;
+			left: auto;
+			top: auto;
+			margin: 0 auto;
+			text-align: center;
+		}
+
+		&.reviews-listing {
+			padding: 0;
+			.hreview {
+				float: left;
+				width: 100%;
+				padding: 20px;
+				border-top: 1px dashed #dddddd;
+
+				&:first-child {
+					border-top: none;
+				}
+
+				h3 {
+					font-size: 20px;
+
+					&:after {
+						display: none;
+					}
+
+					a {
+						color: #000;
+					}
+				}
+
+				.post-info-title {
+					margin-top: -85px;
+
+					p {
+						font-size: 14px;
+					}
+				}
+
+				.excerpt {
+					float: left;
+					width: 100%;
+					margin-top: 40px;
+
+					p {
+						@include merriweather-light;
+						font-size: 14px;
+						color: $light-gray;
+						line-height: 24px;
+					}
+				}
+
+				a.read-more {
+					@include proxima-nova-semibold;
+					font-size: 14px;
+					color: #000;
+					text-transform: uppercase;
+					display: block;
+					float: left;
+					width: 100%;
+					margin-top: 15px;
+				}
+			}
+		}
+
+		
+
 		.ball-about {
 			float: left;
 			width: 100%;
@@ -955,5 +1035,64 @@ body {
 
 // CUSTOM CSS - INTERIOR page-break-inside: 
 
-// Contact page
+// REVIEWS PAGE
 
+.hreview {
+
+	.wpcr_sc {
+		margin-right: 15px;
+	}
+
+	h4.summary {
+		@include proxima-nova-semibold;
+		color: $dark-gray;
+		text-transform: uppercase;
+		font-size: 28px;
+		margin-bottom: 25px;
+	}
+
+	.dtreviewed {
+		@include proxima-nova-light;
+		font-size: 16px;
+		text-transform: uppercase;
+		border-bottom: none;
+	}
+
+	.wpcr_rname {
+
+		span {
+			text-transform: uppercase;
+			@include proxima-nova-light;
+		}
+
+		.vcard .fn {
+			@include proxima-nova-semibold;
+			font-size: 16px;
+		}
+	}
+
+	.description {
+		margin: 30px 0;
+	}
+}
+
+.content-block.reviews-listing {
+	.description {
+		@include proxima-nova-light;
+		font-size: 18px;
+		color: $light-gray;
+		a {
+			@include proxima-nova-semibold;
+			font-size: 18px;
+			text-transform: uppercase;
+			color: $dark-gray;
+			float: left;
+			width: 100%;
+			margin-top: 25px;
+		}
+	}
+
+	#wpcr_respond_1 a#wpcr_button_1, #wpcr_respond_2 a#wpcr_button_1, hr {
+		display: none !important;
+	}
+}

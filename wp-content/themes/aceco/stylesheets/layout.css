@@ -571,7 +571,89 @@ body {
   height: 39px;
   background: url("../images/icon-phone-blue.png") no-repeat center center;
 }
-/* line 541, ../sass/layout.scss */
+/* line 544, ../sass/layout.scss */
+.main-content .content-block .write-review {
+  height: 44px;
+  line-height: 44px;
+  padding: 0 25px;
+  background: #272727;
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #FFF;
+  position: relative;
+  display: block;
+  right: auto;
+  left: auto;
+  top: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 561, ../sass/layout.scss */
+.main-content .content-block.reviews-listing {
+  padding: 0;
+}
+/* line 563, ../sass/layout.scss */
+.main-content .content-block.reviews-listing .hreview {
+  float: left;
+  width: 100%;
+  padding: 20px;
+  border-top: 1px dashed #dddddd;
+}
+/* line 569, ../sass/layout.scss */
+.main-content .content-block.reviews-listing .hreview:first-child {
+  border-top: none;
+}
+/* line 573, ../sass/layout.scss */
+.main-content .content-block.reviews-listing .hreview h3 {
+  font-size: 20px;
+}
+/* line 576, ../sass/layout.scss */
+.main-content .content-block.reviews-listing .hreview h3:after {
+  display: none;
+}
+/* line 580, ../sass/layout.scss */
+.main-content .content-block.reviews-listing .hreview h3 a {
+  color: #000;
+}
+/* line 585, ../sass/layout.scss */
+.main-content .content-block.reviews-listing .hreview .post-info-title {
+  margin-top: -85px;
+}
+/* line 588, ../sass/layout.scss */
+.main-content .content-block.reviews-listing .hreview .post-info-title p {
+  font-size: 14px;
+}
+/* line 593, ../sass/layout.scss */
+.main-content .content-block.reviews-listing .hreview .excerpt {
+  float: left;
+  width: 100%;
+  margin-top: 40px;
+}
+/* line 598, ../sass/layout.scss */
+.main-content .content-block.reviews-listing .hreview .excerpt p {
+  font-family: "merriweather",serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  color: #939393;
+  line-height: 24px;
+}
+/* line 606, ../sass/layout.scss */
+.main-content .content-block.reviews-listing .hreview a.read-more {
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #000;
+  text-transform: uppercase;
+  display: block;
+  float: left;
+  width: 100%;
+  margin-top: 15px;
+}
+/* line 621, ../sass/layout.scss */
 .main-content .content-block .ball-about {
   float: left;
   width: 100%;
@@ -582,7 +664,7 @@ body {
   margin-left: -20px;
   display: none;
 }
-/* line 552, ../sass/layout.scss */
+/* line 632, ../sass/layout.scss */
 .main-content .content-block .appliances-selector {
   margin-bottom: 10px;
   margin-top: 30px;
@@ -590,7 +672,7 @@ body {
   width: 100%;
   background: #FFF;
 }
-/* line 559, ../sass/layout.scss */
+/* line 639, ../sass/layout.scss */
 .main-content .content-block .appliances-selector a.appliance {
   width: 100%;
   float: left;
@@ -611,30 +693,30 @@ body {
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-/* line 577, ../sass/layout.scss */
+/* line 657, ../sass/layout.scss */
 .main-content .content-block .appliances-selector a.appliance:hover {
   background: #3c3c3c;
   color: #FFF;
   border-top: 1px solid #272727;
   border-right: 1px solid #272727;
 }
-/* line 584, ../sass/layout.scss */
+/* line 664, ../sass/layout.scss */
 .main-content .content-block .appliances-selector a.appliance:first-child {
   border-top: none;
 }
-/* line 588, ../sass/layout.scss */
+/* line 668, ../sass/layout.scss */
 .main-content .content-block .appliances-selector a.appliance img {
   display: block;
   clear: both;
   margin: 0 auto 30px auto;
 }
-/* line 596, ../sass/layout.scss */
+/* line 676, ../sass/layout.scss */
 .main-content .content-block .product-selector {
   float: left;
   width: 100%;
   background: #FFF;
 }
-/* line 601, ../sass/layout.scss */
+/* line 681, ../sass/layout.scss */
 .main-content .content-block .product-selector .product {
   width: 100%;
   height: 670px;
@@ -650,22 +732,22 @@ body {
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-/* line 616, ../sass/layout.scss */
+/* line 696, ../sass/layout.scss */
 .main-content .content-block .product-selector .product:first-child {
   border-top: none;
 }
-/* line 620, ../sass/layout.scss */
+/* line 700, ../sass/layout.scss */
 .main-content .content-block .product-selector .product .product-image {
   padding-top: 80px;
   margin-bottom: 30px;
 }
-/* line 624, ../sass/layout.scss */
+/* line 704, ../sass/layout.scss */
 .main-content .content-block .product-selector .product .product-image img {
   display: block;
   clear: both;
   margin: 0 auto;
 }
-/* line 631, ../sass/layout.scss */
+/* line 711, ../sass/layout.scss */
 .main-content .content-block .product-selector .product .prod-name {
   font-family: "proxima-nova",sans-serif;
   font-style: normal;
@@ -676,7 +758,7 @@ body {
   width: 100%;
   margin-bottom: 40px;
 }
-/* line 640, ../sass/layout.scss */
+/* line 720, ../sass/layout.scss */
 .main-content .content-block .product-selector .product p {
   font-family: "proxima-nova",sans-serif;
   font-style: normal;
@@ -685,7 +767,7 @@ body {
   text-transform: none;
   line-height: 30px;
 }
-/* line 646, ../sass/layout.scss */
+/* line 726, ../sass/layout.scss */
 .main-content .content-block .product-selector .product p span {
   font-family: "proxima-nova",sans-serif;
   font-style: normal;
@@ -695,7 +777,7 @@ body {
   font-size: 24px;
   padding: 0 7px;
 }
-/* line 655, ../sass/layout.scss */
+/* line 735, ../sass/layout.scss */
 .main-content .content-block .product-selector .product .btn-view {
   font-family: "proxima-nova",sans-serif;
   font-style: normal;
@@ -714,11 +796,11 @@ body {
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-/* line 671, ../sass/layout.scss */
+/* line 751, ../sass/layout.scss */
 .main-content .content-block .product-selector .product .btn-view:hover {
   background: #939393;
 }
-/* line 679, ../sass/layout.scss */
+/* line 759, ../sass/layout.scss */
 .main-content .content-block .container-form {
   width: 100%;
   border: 1px solid #c4c4c4;
@@ -728,7 +810,7 @@ body {
   margin-top: 20px;
   margin-bottom: -50px;
 }
-/* line 688, ../sass/layout.scss */
+/* line 768, ../sass/layout.scss */
 .main-content .content-block .container-form input[type="search"] {
   height: 42px;
   padding-left: 15px;
@@ -743,7 +825,7 @@ body {
   text-transform: uppercase;
   color: #939393;
 }
-/* line 701, ../sass/layout.scss */
+/* line 781, ../sass/layout.scss */
 .main-content .content-block .container-form input[type="submit"] {
   float: right;
   width: 24px;
@@ -756,7 +838,7 @@ body {
   margin-right: 15px;
   outline: none;
 }
-/* line 715, ../sass/layout.scss */
+/* line 795, ../sass/layout.scss */
 .main-content .content-block .map-areas {
   float: left;
   width: 100%;
@@ -766,7 +848,7 @@ body {
   position: relative;
   margin-top: 55px;
 }
-/* line 724, ../sass/layout.scss */
+/* line 804, ../sass/layout.scss */
 .main-content .content-block .map-areas a {
   position: absolute;
   font-family: "proxima-nova",sans-serif;
@@ -785,45 +867,45 @@ body {
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-/* line 740, ../sass/layout.scss */
+/* line 820, ../sass/layout.scss */
 .main-content .content-block .map-areas a.northern-beaches {
   left: 483px;
   top: 49px;
   height: 46px;
   padding: 15px 0;
 }
-/* line 747, ../sass/layout.scss */
+/* line 827, ../sass/layout.scss */
 .main-content .content-block .map-areas a.north-shore {
   left: 340px;
   top: 281px;
   height: 26px;
   padding: 25px 0;
 }
-/* line 754, ../sass/layout.scss */
+/* line 834, ../sass/layout.scss */
 .main-content .content-block .map-areas a.inner-west {
   left: 118px;
   top: 502px;
   height: 26px;
   padding: 25px 0;
 }
-/* line 761, ../sass/layout.scss */
+/* line 841, ../sass/layout.scss */
 .main-content .content-block .map-areas a.eastern-suburbs {
   left: 483px;
   top: 589px;
   height: 46px;
   padding: 15px 0;
 }
-/* line 768, ../sass/layout.scss */
+/* line 848, ../sass/layout.scss */
 .main-content .content-block .map-areas a:hover {
   background: #272727;
   color: #FFF;
 }
-/* line 772, ../sass/layout.scss */
+/* line 852, ../sass/layout.scss */
 .main-content .content-block .map-areas a:hover:after {
   background: url("../images/tooltip-arrow-hover.png") no-repeat center center;
   bottom: -11px;
 }
-/* line 778, ../sass/layout.scss */
+/* line 858, ../sass/layout.scss */
 .main-content .content-block .map-areas a:after {
   content: " ";
   position: absolute;
@@ -838,14 +920,14 @@ body {
   -o-transition: background 0.2s linear;
   transition: background 0.2s linear;
 }
-/* line 795, ../sass/layout.scss */
+/* line 875, ../sass/layout.scss */
 .main-content .content-block .product-gallery {
   float: left;
   width: 100%;
   height: 300px;
   background: #939393;
 }
-/* line 806, ../sass/layout.scss */
+/* line 886, ../sass/layout.scss */
 .main-content .content-block .form-container {
   max-width: 700px;
   background: #FFF;
@@ -853,7 +935,7 @@ body {
   position: relative;
   margin: 124px auto 0 auto;
 }
-/* line 813, ../sass/layout.scss */
+/* line 893, ../sass/layout.scss */
 .main-content .content-block .form-container label {
   font-family: "proxima-nova",sans-serif;
   font-style: normal;
@@ -865,7 +947,7 @@ body {
   width: 100%;
   margin-bottom: 10px;
 }
-/* line 823, ../sass/layout.scss */
+/* line 903, ../sass/layout.scss */
 .main-content .content-block .form-container input, .main-content .content-block .form-container textarea {
   float: left;
   width: 97%;
@@ -884,22 +966,22 @@ body {
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-/* line 839, ../sass/layout.scss */
+/* line 919, ../sass/layout.scss */
 .main-content .content-block .form-container input:focus, .main-content .content-block .form-container textarea:focus {
   border: 1px solid #272727;
 }
-/* line 844, ../sass/layout.scss */
+/* line 924, ../sass/layout.scss */
 .main-content .content-block .form-container input {
   height: 33px;
   margin-bottom: 20px;
 }
-/* line 849, ../sass/layout.scss */
+/* line 929, ../sass/layout.scss */
 .main-content .content-block .form-container textarea {
   height: 178px;
   resize: none;
   margin-bottom: 65px;
 }
-/* line 855, ../sass/layout.scss */
+/* line 935, ../sass/layout.scss */
 .main-content .content-block .form-container input[type="submit"] {
   position: relative;
   margin: 0 auto;
@@ -920,26 +1002,26 @@ body {
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-/* line 875, ../sass/layout.scss */
+/* line 955, ../sass/layout.scss */
 .main-content .content-block .form-container input[type="submit"]:hover {
   background: #939393;
 }
 
-/* line 887, ../sass/layout.scss */
+/* line 967, ../sass/layout.scss */
 .site-footer {
   float: left;
   width: 100%;
   padding-bottom: 50px;
 }
-/* line 892, ../sass/layout.scss */
+/* line 972, ../sass/layout.scss */
 .site-footer .wrapper {
   padding: 0;
 }
-/* line 893, ../sass/layout.scss */
+/* line 973, ../sass/layout.scss */
 .site-footer nav {
   clear: both;
 }
-/* line 895, ../sass/layout.scss */
+/* line 975, ../sass/layout.scss */
 .site-footer .social-nav {
   width: 100%;
   background: #272727;
@@ -947,13 +1029,13 @@ body {
   clear: both;
   float: right;
 }
-/* line 902, ../sass/layout.scss */
+/* line 982, ../sass/layout.scss */
 .site-footer .social-nav li {
   float: left;
   width: 33%;
   height: 44px;
 }
-/* line 907, ../sass/layout.scss */
+/* line 987, ../sass/layout.scss */
 .site-footer .social-nav li a {
   display: block;
   text-align: center;
@@ -962,27 +1044,27 @@ body {
   background: rgba(255, 255, 255, 0.6);
   text-indent: -99999px;
 }
-/* line 916, ../sass/layout.scss */
+/* line 996, ../sass/layout.scss */
 .site-footer .social-nav li.social-twitter a {
   background: url("../images/icon-twitter.png") no-repeat center center;
 }
-/* line 917, ../sass/layout.scss */
+/* line 997, ../sass/layout.scss */
 .site-footer .social-nav li.social-facebook a {
   background: url("../images/icon-facebook.png") no-repeat center center;
 }
-/* line 918, ../sass/layout.scss */
+/* line 998, ../sass/layout.scss */
 .site-footer .social-nav li.social-plus a {
   background: url("../images/icon-plus.png") no-repeat center center;
 }
-/* line 922, ../sass/layout.scss */
+/* line 1002, ../sass/layout.scss */
 .site-footer .footer-nav {
   display: none;
 }
-/* line 924, ../sass/layout.scss */
+/* line 1004, ../sass/layout.scss */
 .site-footer .footer-nav li {
   float: left;
 }
-/* line 927, ../sass/layout.scss */
+/* line 1007, ../sass/layout.scss */
 .site-footer .footer-nav li a {
   font-family: "proxima-nova",sans-serif;
   font-style: normal;
@@ -993,7 +1075,7 @@ body {
   padding: 0 10px;
   text-decoration: none;
 }
-/* line 938, ../sass/layout.scss */
+/* line 1018, ../sass/layout.scss */
 .site-footer .footer-info {
   clear: both;
   margin-top: 30px;
@@ -1001,7 +1083,7 @@ body {
   float: left;
   width: 100%;
 }
-/* line 945, ../sass/layout.scss */
+/* line 1025, ../sass/layout.scss */
 .site-footer .footer-info p, .site-footer .footer-info a {
   font-family: "proxima-nova",sans-serif;
   font-style: normal;
@@ -1010,4 +1092,71 @@ body {
   color: #939393;
   text-align: center;
   line-height: 26px;
+}
+
+/* line 1042, ../sass/layout.scss */
+.hreview .wpcr_sc {
+  margin-right: 15px;
+}
+/* line 1046, ../sass/layout.scss */
+.hreview h4.summary {
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: #272727;
+  text-transform: uppercase;
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+/* line 1054, ../sass/layout.scss */
+.hreview .dtreviewed {
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-bottom: none;
+}
+/* line 1063, ../sass/layout.scss */
+.hreview .wpcr_rname span {
+  text-transform: uppercase;
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+/* line 1068, ../sass/layout.scss */
+.hreview .wpcr_rname .vcard .fn {
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+}
+/* line 1074, ../sass/layout.scss */
+.hreview .description {
+  margin: 30px 0;
+}
+
+/* line 1080, ../sass/layout.scss */
+.content-block.reviews-listing .description {
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  color: #939393;
+}
+/* line 1084, ../sass/layout.scss */
+.content-block.reviews-listing .description a {
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #272727;
+  float: left;
+  width: 100%;
+  margin-top: 25px;
+}
+/* line 1095, ../sass/layout.scss */
+.content-block.reviews-listing #wpcr_respond_1 a#wpcr_button_1, .content-block.reviews-listing #wpcr_respond_2 a#wpcr_button_1, .content-block.reviews-listing hr {
+  display: none !important;
 }
