@@ -135,12 +135,19 @@ body {
   padding: 0;
 }
 
-/* line 34, ../sass/layout.scss */
+/* line 32, ../sass/layout.scss */
+.product-wrapper {
+  max-width: 900px;
+  position: relative;
+  margin: 0 auto;
+}
+
+/* line 40, ../sass/layout.scss */
 .site-header {
   float: left;
   width: 100%;
 }
-/* line 38, ../sass/layout.scss */
+/* line 44, ../sass/layout.scss */
 .site-header .white-bar {
   position: absolute;
   left: -25%;
@@ -149,24 +156,24 @@ body {
   background: #FFF;
   width: 50%;
 }
-/* line 47, ../sass/layout.scss */
+/* line 53, ../sass/layout.scss */
 .site-header .top-bar {
   width: 100%;
   background: #272727;
   float: left;
   margin-bottom: 45px;
 }
-/* line 53, ../sass/layout.scss */
+/* line 59, ../sass/layout.scss */
 .site-header .top-bar .wrapper {
   padding: 0;
 }
-/* line 57, ../sass/layout.scss */
+/* line 63, ../sass/layout.scss */
 .site-header .top-bar .logo-container {
   float: left;
   width: 100%;
   background: #FFF;
 }
-/* line 62, ../sass/layout.scss */
+/* line 68, ../sass/layout.scss */
 .site-header .top-bar .logo-container a {
   display: block;
   width: 237px;
@@ -175,11 +182,11 @@ body {
   text-indent: -99999px;
   background: url(../images/logo-aceco.png) no-repeat center center;
 }
-/* line 72, ../sass/layout.scss */
+/* line 78, ../sass/layout.scss */
 .site-header .top-bar .delivery-phone-box {
   padding: 0 20px;
 }
-/* line 75, ../sass/layout.scss */
+/* line 81, ../sass/layout.scss */
 .site-header .top-bar .delivery-phone-box span {
   float: left;
   color: #FFF;
@@ -192,7 +199,7 @@ body {
   position: relative;
   line-height: 2em;
 }
-/* line 86, ../sass/layout.scss */
+/* line 92, ../sass/layout.scss */
 .site-header .top-bar .delivery-phone-box span.delivery:before {
   content: " ";
   position: absolute;
@@ -203,12 +210,12 @@ body {
   background: url("../images/icon-delivery.png") no-repeat center center;
   background-size: 100%;
 }
-/* line 100, ../sass/layout.scss */
+/* line 106, ../sass/layout.scss */
 .site-header .top-bar .delivery-phone-box span.phone {
   text-align: right;
   float: right;
 }
-/* line 104, ../sass/layout.scss */
+/* line 110, ../sass/layout.scss */
 .site-header .top-bar .delivery-phone-box span.phone:before {
   content: " ";
   position: absolute;
@@ -219,28 +226,28 @@ body {
   background: url("../images/icon-phone.png") no-repeat center center;
   background-size: 100%;
 }
-/* line 121, ../sass/layout.scss */
+/* line 127, ../sass/layout.scss */
 .site-header .main-nav {
   float: left;
   width: 100%;
   margin-bottom: 15px;
 }
-/* line 126, ../sass/layout.scss */
+/* line 132, ../sass/layout.scss */
 .site-header .main-nav li {
   padding: 0 25px;
   float: left;
 }
-/* line 130, ../sass/layout.scss */
+/* line 136, ../sass/layout.scss */
 .site-header .main-nav li:first-child {
   margin-left: 10px;
 }
 @media only screen and (min-width: 1069px) {
-  /* line 126, ../sass/layout.scss */
+  /* line 132, ../sass/layout.scss */
   .site-header .main-nav li {
     padding: 0 28px;
   }
 }
-/* line 139, ../sass/layout.scss */
+/* line 145, ../sass/layout.scss */
 .site-header .main-nav li a {
   font-family: "proxima-nova",sans-serif;
   font-style: normal;
@@ -251,34 +258,42 @@ body {
   text-transform: uppercase;
   color: #000;
 }
-/* line 147, ../sass/layout.scss */
+/* line 153, ../sass/layout.scss */
 .site-header .main-nav li a:hover {
   border-bottom: 2px solid #000;
 }
-/* line 154, ../sass/layout.scss */
-.site-header .main-nav li.current-menu-item a, .site-header .main-nav li.current_page_item a, .site-header .main-nav li.current-page-ancestor a {
+/* line 160, ../sass/layout.scss */
+.site-header .main-nav li.current-menu-item a, .site-header .main-nav li.current_page_item a, .site-header .main-nav li.current-page-ancestor a, .site-header .main-nav li.current_page_parent a {
   font-family: "proxima-nova",sans-serif;
   font-style: normal;
   font-weight: 600;
   border-bottom: 2px solid #000;
 }
 
-/* line 163, ../sass/layout.scss */
+/* line 169, ../sass/layout.scss */
 .main-content {
   float: left;
   width: 100%;
 }
-/* line 167, ../sass/layout.scss */
+/* line 173, ../sass/layout.scss */
 .main-content .content-section {
   float: left;
   width: 100%;
   margin-bottom: 20px;
 }
-/* line 172, ../sass/layout.scss */
+/* line 178, ../sass/layout.scss */
 .main-content .content-section:last-child {
   margin-bottom: 0;
 }
-/* line 177, ../sass/layout.scss */
+/* line 182, ../sass/layout.scss */
+.main-content .content-section.products {
+  padding: 0;
+}
+/* line 185, ../sass/layout.scss */
+.main-content .content-section.products .content-block {
+  padding: 0;
+}
+/* line 191, ../sass/layout.scss */
 .main-content .content-block {
   background: #FFF;
   padding: 30px 0;
@@ -286,40 +301,60 @@ body {
   width: 100%;
   overflow-x: hidden;
 }
-/* line 184, ../sass/layout.scss */
+/* line 198, ../sass/layout.scss */
 .main-content .content-block.dashed {
-  background: url(../images/dashed-line.png) repeat-x left bottom #FFF;
+  border-bottom: 1px dashed #dddddd;
 }
-/* line 188, ../sass/layout.scss */
+/* line 202, ../sass/layout.scss */
 .main-content .content-block.gray {
   background: #efefef;
   padding: 0 0 80px 0;
 }
-/* line 192, ../sass/layout.scss */
-.main-content .content-block.gray.dashed {
-  background: url(../images/dashed-line.png) repeat-x left bottom #efefef;
+/* line 207, ../sass/layout.scss */
+.main-content .content-block.block-ball {
+  display: none;
 }
-/* line 197, ../sass/layout.scss */
+/* line 211, ../sass/layout.scss */
 .main-content .content-block.area-served-map {
   height: 350px;
 }
-/* line 200, ../sass/layout.scss */
+/* line 214, ../sass/layout.scss */
 .main-content .content-block.area-served-map.northern-beaches {
   background: url("../images/map-northern-beaches.png") no-repeat right center #FFF;
 }
-/* line 201, ../sass/layout.scss */
+/* line 215, ../sass/layout.scss */
 .main-content .content-block.area-served-map.north-shore {
   background: url("../images/map-north-shore.png") no-repeat right center #FFF;
 }
-/* line 202, ../sass/layout.scss */
+/* line 216, ../sass/layout.scss */
 .main-content .content-block.area-served-map.inner-west {
   background: url("../images/map-inner-west.png") no-repeat right center #FFF;
 }
-/* line 203, ../sass/layout.scss */
+/* line 217, ../sass/layout.scss */
 .main-content .content-block.area-served-map.eastern-suburbs {
   background: url("../images/map-eastern-suburbs.png") no-repeat right center #FFF;
 }
-/* line 206, ../sass/layout.scss */
+/* line 221, ../sass/layout.scss */
+.main-content .content-block.p404 h1 {
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  text-align: center;
+  color: #272727;
+  margin-bottom: 30px;
+}
+/* line 229, ../sass/layout.scss */
+.main-content .content-block.p404 p {
+  text-align: center;
+  padding: 0 20px;
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  text-align: center;
+  font-size: 24px;
+}
+/* line 238, ../sass/layout.scss */
 .main-content .content-block h2, .main-content .content-block h3:not(.black-section-title) {
   font-family: "merriweather",serif;
   font-style: normal;
@@ -328,15 +363,15 @@ body {
   position: relative;
   padding-bottom: 50px;
 }
-/* line 213, ../sass/layout.scss */
+/* line 245, ../sass/layout.scss */
 .main-content .content-block h2 {
   font-size: 20px;
 }
-/* line 217, ../sass/layout.scss */
+/* line 249, ../sass/layout.scss */
 .main-content .content-block h3 {
   font-size: 18px;
 }
-/* line 221, ../sass/layout.scss */
+/* line 253, ../sass/layout.scss */
 .main-content .content-block h2:after, .main-content .content-block h3:after {
   content: " ";
   position: absolute;
@@ -346,7 +381,7 @@ body {
   height: 4px;
   background: #57c5c7;
 }
-/* line 231, ../sass/layout.scss */
+/* line 263, ../sass/layout.scss */
 .main-content .content-block .text {
   position: relative;
   color: #939393;
@@ -356,35 +391,35 @@ body {
   font-weight: 300;
   line-height: 24px;
 }
-/* line 238, ../sass/layout.scss */
+/* line 270, ../sass/layout.scss */
 .main-content .content-block .text p {
   margin-top: 25px;
 }
-/* line 241, ../sass/layout.scss */
+/* line 273, ../sass/layout.scss */
 .main-content .content-block .text p:first-child {
   margin-top: 0;
 }
-/* line 245, ../sass/layout.scss */
+/* line 277, ../sass/layout.scss */
 .main-content .content-block .text p strong, .main-content .content-block .text p span, .main-content .content-block .text p a {
   font-family: "proxima-nova",sans-serif;
   font-style: normal;
   font-weight: 600;
 }
-/* line 249, ../sass/layout.scss */
+/* line 281, ../sass/layout.scss */
 .main-content .content-block .text p strong {
   color: #000;
 }
-/* line 253, ../sass/layout.scss */
+/* line 285, ../sass/layout.scss */
 .main-content .content-block .text p span, .main-content .content-block .text p a {
   color: #57c5c7;
 }
-/* line 259, ../sass/layout.scss */
+/* line 291, ../sass/layout.scss */
 .main-content .content-block .appliances-categories {
   margin-bottom: 80px;
   float: left;
   width: 100%;
 }
-/* line 264, ../sass/layout.scss */
+/* line 296, ../sass/layout.scss */
 .main-content .content-block .appliances-categories a.appliance {
   width: 100%;
   float: left;
@@ -397,17 +432,17 @@ body {
   text-transform: uppercase;
   margin-top: 30px;
 }
-/* line 274, ../sass/layout.scss */
+/* line 306, ../sass/layout.scss */
 .main-content .content-block .appliances-categories a.appliance:first-child {
   margin-top: 0;
 }
-/* line 278, ../sass/layout.scss */
+/* line 310, ../sass/layout.scss */
 .main-content .content-block .appliances-categories a.appliance img {
   display: block;
   clear: both;
   margin: 0 auto 30px auto;
 }
-/* line 286, ../sass/layout.scss */
+/* line 318, ../sass/layout.scss */
 .main-content .content-block .black-section-title {
   background: #272727;
   text-align: center;
@@ -421,15 +456,15 @@ body {
   line-height: 44px;
   color: #FFF;
 }
-/* line 297, ../sass/layout.scss */
+/* line 329, ../sass/layout.scss */
 .main-content .content-block .black-section-title:after {
   display: none;
 }
-/* line 301, ../sass/layout.scss */
+/* line 333, ../sass/layout.scss */
 .main-content .content-block .black-section-title span {
   position: relative;
 }
-/* line 304, ../sass/layout.scss */
+/* line 336, ../sass/layout.scss */
 .main-content .content-block .black-section-title span:before {
   content: " ";
   position: absolute;
@@ -439,14 +474,14 @@ body {
   height: 9px;
   background: url("../images/arrow-down.png") no-repeat center center;
 }
-/* line 317, ../sass/layout.scss */
+/* line 349, ../sass/layout.scss */
 .main-content .content-block .brands-list li {
   width: 100%;
   text-align: center;
   float: left;
   margin-top: 50px;
 }
-/* line 325, ../sass/layout.scss */
+/* line 357, ../sass/layout.scss */
 .main-content .content-block .support-phone {
   font-family: "proxima-nova",sans-serif;
   font-style: normal;
@@ -460,7 +495,7 @@ body {
   position: relative;
   line-height: 45px;
 }
-/* line 336, ../sass/layout.scss */
+/* line 368, ../sass/layout.scss */
 .main-content .content-block .support-phone:before {
   content: " ";
   position: absolute;
@@ -470,7 +505,7 @@ body {
   height: 39px;
   background: url("../images/icon-phone-blue.png") no-repeat center center;
 }
-/* line 347, ../sass/layout.scss */
+/* line 379, ../sass/layout.scss */
 .main-content .content-block .ball-about {
   float: left;
   width: 100%;
@@ -481,7 +516,7 @@ body {
   margin-left: -20px;
   display: none;
 }
-/* line 358, ../sass/layout.scss */
+/* line 390, ../sass/layout.scss */
 .main-content .content-block .appliances-selector {
   margin-bottom: 10px;
   margin-top: 30px;
@@ -489,7 +524,7 @@ body {
   width: 100%;
   background: #FFF;
 }
-/* line 365, ../sass/layout.scss */
+/* line 397, ../sass/layout.scss */
 .main-content .content-block .appliances-selector a.appliance {
   width: 100%;
   float: left;
@@ -503,112 +538,121 @@ body {
   text-transform: uppercase;
   background: #FFF;
   padding: 95px 0 80px 0;
+  border-top: 1px dashed #dddddd;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   -ms-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-/* line 382, ../sass/layout.scss */
+/* line 415, ../sass/layout.scss */
 .main-content .content-block .appliances-selector a.appliance:hover {
   background: #3c3c3c;
   color: #FFF;
+  border-top: 1px solid #272727;
+  border-right: 1px solid #272727;
 }
-/* line 386, ../sass/layout.scss */
-.main-content .content-block .appliances-selector a.appliance:hover:before, .main-content .content-block .appliances-selector a.appliance:hover:after {
-  display: none;
+/* line 422, ../sass/layout.scss */
+.main-content .content-block .appliances-selector a.appliance:first-child {
+  border-top: none;
 }
-/* line 391, ../sass/layout.scss */
-.main-content .content-block .appliances-selector a.appliance:before {
-  content: " ";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 1px;
-  background: url("../images/dashed-line.png") repeat-x left center;
-}
-/* line 401, ../sass/layout.scss */
-.main-content .content-block .appliances-selector a.appliance:after {
-  content: " ";
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 1px;
-  height: 100%;
-  display: none;
-  background: url("../images/dashed-line-v.png") repeat-y left center;
-}
-/* line 412, ../sass/layout.scss */
-.main-content .content-block .appliances-selector a.appliance.washing:before {
-  display: none;
-}
-/* line 416, ../sass/layout.scss */
+/* line 426, ../sass/layout.scss */
 .main-content .content-block .appliances-selector a.appliance img {
   display: block;
   clear: both;
   margin: 0 auto 30px auto;
 }
-/* line 424, ../sass/layout.scss */
+/* line 434, ../sass/layout.scss */
 .main-content .content-block .product-selector {
-  margin-bottom: 80px;
-  margin-top: 30px;
   float: left;
   width: 100%;
   background: #FFF;
 }
-/* line 431, ../sass/layout.scss */
-.main-content .content-block .product-selector a.product {
+/* line 439, ../sass/layout.scss */
+.main-content .content-block .product-selector .product {
   width: 100%;
+  height: 670px;
   float: left;
   text-align: center;
-  font-family: "proxima-nova",sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  color: #000;
   position: relative;
   text-transform: uppercase;
   background: #FFF;
-  padding: 95px 0 80px 0;
+  border-top: 1px dashed #dddddd;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   -ms-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-/* line 448, ../sass/layout.scss */
-.main-content .content-block .product-selector a.product:before {
-  content: " ";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 1px;
-  background: url("../images/dashed-line.png") repeat-x left center;
+/* line 454, ../sass/layout.scss */
+.main-content .content-block .product-selector .product:first-child {
+  border-top: none;
 }
 /* line 458, ../sass/layout.scss */
-.main-content .content-block .product-selector a.product:after {
-  content: " ";
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 1px;
-  height: 100%;
-  display: none;
-  background: url("../images/dashed-line-v.png") repeat-y left center;
+.main-content .content-block .product-selector .product .product-image {
+  padding-top: 80px;
+  margin-bottom: 30px;
 }
-/* line 469, ../sass/layout.scss */
-.main-content .content-block .product-selector a.product.washing:before {
-  display: none;
-}
-/* line 473, ../sass/layout.scss */
-.main-content .content-block .product-selector a.product img {
+/* line 462, ../sass/layout.scss */
+.main-content .content-block .product-selector .product .product-image img {
   display: block;
   clear: both;
-  margin: 0 auto 30px auto;
+  margin: 0 auto;
 }
-/* line 481, ../sass/layout.scss */
+/* line 469, ../sass/layout.scss */
+.main-content .content-block .product-selector .product .prod-name {
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #000;
+  float: left;
+  width: 100%;
+  margin-bottom: 40px;
+}
+/* line 478, ../sass/layout.scss */
+.main-content .content-block .product-selector .product p {
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  text-transform: none;
+  line-height: 30px;
+}
+/* line 484, ../sass/layout.scss */
+.main-content .content-block .product-selector .product p span {
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: #57c5c7;
+  text-transform: uppercase;
+  font-size: 24px;
+  padding: 0 7px;
+}
+/* line 493, ../sass/layout.scss */
+.main-content .content-block .product-selector .product .btn-view {
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: #FFF;
+  background: #272727;
+  text-align: center;
+  width: 162px;
+  height: 44px;
+  display: block;
+  margin: 45px auto 0 auto;
+  line-height: 44px;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+/* line 509, ../sass/layout.scss */
+.main-content .content-block .product-selector .product .btn-view:hover {
+  background: #939393;
+}
+/* line 517, ../sass/layout.scss */
 .main-content .content-block .map-areas {
   float: left;
   width: 100%;
@@ -618,7 +662,7 @@ body {
   position: relative;
   margin-top: 55px;
 }
-/* line 490, ../sass/layout.scss */
+/* line 526, ../sass/layout.scss */
 .main-content .content-block .map-areas a {
   position: absolute;
   font-family: "proxima-nova",sans-serif;
@@ -637,45 +681,45 @@ body {
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-/* line 506, ../sass/layout.scss */
+/* line 542, ../sass/layout.scss */
 .main-content .content-block .map-areas a.northern-beaches {
   left: 483px;
   top: 49px;
   height: 46px;
   padding: 15px 0;
 }
-/* line 513, ../sass/layout.scss */
+/* line 549, ../sass/layout.scss */
 .main-content .content-block .map-areas a.north-shore {
   left: 340px;
   top: 281px;
   height: 26px;
   padding: 25px 0;
 }
-/* line 520, ../sass/layout.scss */
+/* line 556, ../sass/layout.scss */
 .main-content .content-block .map-areas a.inner-west {
   left: 118px;
   top: 502px;
   height: 26px;
   padding: 25px 0;
 }
-/* line 527, ../sass/layout.scss */
+/* line 563, ../sass/layout.scss */
 .main-content .content-block .map-areas a.eastern-suburbs {
   left: 483px;
   top: 589px;
   height: 46px;
   padding: 15px 0;
 }
-/* line 534, ../sass/layout.scss */
+/* line 570, ../sass/layout.scss */
 .main-content .content-block .map-areas a:hover {
   background: #272727;
   color: #FFF;
 }
-/* line 538, ../sass/layout.scss */
+/* line 574, ../sass/layout.scss */
 .main-content .content-block .map-areas a:hover:after {
   background: url("../images/tooltip-arrow-hover.png") no-repeat center center;
   bottom: -11px;
 }
-/* line 544, ../sass/layout.scss */
+/* line 580, ../sass/layout.scss */
 .main-content .content-block .map-areas a:after {
   content: " ";
   position: absolute;
@@ -690,7 +734,14 @@ body {
   -o-transition: background 0.2s linear;
   transition: background 0.2s linear;
 }
-/* line 561, ../sass/layout.scss */
+/* line 597, ../sass/layout.scss */
+.main-content .content-block .product-gallery {
+  float: left;
+  width: 100%;
+  height: 300px;
+  background: #939393;
+}
+/* line 608, ../sass/layout.scss */
 .main-content .content-block .form-container {
   max-width: 700px;
   background: #FFF;
@@ -698,7 +749,7 @@ body {
   position: relative;
   margin: 124px auto 0 auto;
 }
-/* line 568, ../sass/layout.scss */
+/* line 615, ../sass/layout.scss */
 .main-content .content-block .form-container label {
   font-family: "proxima-nova",sans-serif;
   font-style: normal;
@@ -710,7 +761,7 @@ body {
   width: 100%;
   margin-bottom: 10px;
 }
-/* line 578, ../sass/layout.scss */
+/* line 625, ../sass/layout.scss */
 .main-content .content-block .form-container input, .main-content .content-block .form-container textarea {
   float: left;
   width: 97%;
@@ -729,22 +780,22 @@ body {
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-/* line 594, ../sass/layout.scss */
+/* line 641, ../sass/layout.scss */
 .main-content .content-block .form-container input:focus, .main-content .content-block .form-container textarea:focus {
   border: 1px solid #272727;
 }
-/* line 599, ../sass/layout.scss */
+/* line 646, ../sass/layout.scss */
 .main-content .content-block .form-container input {
   height: 33px;
   margin-bottom: 20px;
 }
-/* line 604, ../sass/layout.scss */
+/* line 651, ../sass/layout.scss */
 .main-content .content-block .form-container textarea {
   height: 178px;
   resize: none;
   margin-bottom: 65px;
 }
-/* line 610, ../sass/layout.scss */
+/* line 657, ../sass/layout.scss */
 .main-content .content-block .form-container input[type="submit"] {
   position: relative;
   margin: 0 auto;
@@ -765,26 +816,26 @@ body {
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-/* line 630, ../sass/layout.scss */
+/* line 677, ../sass/layout.scss */
 .main-content .content-block .form-container input[type="submit"]:hover {
   background: #939393;
 }
 
-/* line 642, ../sass/layout.scss */
+/* line 689, ../sass/layout.scss */
 .site-footer {
   float: left;
   width: 100%;
   padding-bottom: 50px;
 }
-/* line 647, ../sass/layout.scss */
+/* line 694, ../sass/layout.scss */
 .site-footer .wrapper {
   padding: 0;
 }
-/* line 648, ../sass/layout.scss */
+/* line 695, ../sass/layout.scss */
 .site-footer nav {
   clear: both;
 }
-/* line 650, ../sass/layout.scss */
+/* line 697, ../sass/layout.scss */
 .site-footer .social-nav {
   width: 100%;
   background: #272727;
@@ -792,13 +843,13 @@ body {
   clear: both;
   float: right;
 }
-/* line 657, ../sass/layout.scss */
+/* line 704, ../sass/layout.scss */
 .site-footer .social-nav li {
   float: left;
   width: 33%;
   height: 44px;
 }
-/* line 662, ../sass/layout.scss */
+/* line 709, ../sass/layout.scss */
 .site-footer .social-nav li a {
   display: block;
   text-align: center;
@@ -807,27 +858,27 @@ body {
   background: rgba(255, 255, 255, 0.6);
   text-indent: -99999px;
 }
-/* line 671, ../sass/layout.scss */
+/* line 718, ../sass/layout.scss */
 .site-footer .social-nav li.social-twitter a {
   background: url("../images/icon-twitter.png") no-repeat center center;
 }
-/* line 672, ../sass/layout.scss */
+/* line 719, ../sass/layout.scss */
 .site-footer .social-nav li.social-facebook a {
   background: url("../images/icon-facebook.png") no-repeat center center;
 }
-/* line 673, ../sass/layout.scss */
+/* line 720, ../sass/layout.scss */
 .site-footer .social-nav li.social-plus a {
   background: url("../images/icon-plus.png") no-repeat center center;
 }
-/* line 677, ../sass/layout.scss */
+/* line 724, ../sass/layout.scss */
 .site-footer .footer-nav {
   display: none;
 }
-/* line 679, ../sass/layout.scss */
+/* line 726, ../sass/layout.scss */
 .site-footer .footer-nav li {
   float: left;
 }
-/* line 682, ../sass/layout.scss */
+/* line 729, ../sass/layout.scss */
 .site-footer .footer-nav li a {
   font-family: "proxima-nova",sans-serif;
   font-style: normal;
@@ -838,7 +889,7 @@ body {
   padding: 0 10px;
   text-decoration: none;
 }
-/* line 693, ../sass/layout.scss */
+/* line 740, ../sass/layout.scss */
 .site-footer .footer-info {
   clear: both;
   margin-top: 30px;
@@ -846,7 +897,7 @@ body {
   float: left;
   width: 100%;
 }
-/* line 700, ../sass/layout.scss */
+/* line 747, ../sass/layout.scss */
 .site-footer .footer-info p, .site-footer .footer-info a {
   font-family: "proxima-nova",sans-serif;
   font-style: normal;
@@ -927,33 +978,38 @@ body {
     padding: 0 0 70px 0;
   }
   /* line 96, ../sass/responsive.scss */
+  .main-content .content-block.block-ball {
+    display: block;
+    margin-bottom: -120px;
+  }
+  /* line 101, ../sass/responsive.scss */
   .main-content .content-block h2 {
     font-size: 38px;
     margin-bottom: 30px;
     line-height: 50px;
   }
-  /* line 102, ../sass/responsive.scss */
+  /* line 107, ../sass/responsive.scss */
   .main-content .content-block h3:not(.black-section-title) {
     font-size: 30px;
     margin-bottom: 30px;
     line-height: 45px;
   }
-  /* line 108, ../sass/responsive.scss */
+  /* line 113, ../sass/responsive.scss */
   .main-content .content-block .text {
     font-size: 16px;
     line-height: 26px;
   }
-  /* line 113, ../sass/responsive.scss */
+  /* line 118, ../sass/responsive.scss */
   .main-content .content-block .appliances-categories {
     margin-bottom: -50px;
   }
-  /* line 117, ../sass/responsive.scss */
+  /* line 122, ../sass/responsive.scss */
   .main-content .content-block .appliances-categories a.appliance {
     width: 50%;
     margin-bottom: 30px;
     margin-top: 0;
   }
-  /* line 122, ../sass/responsive.scss */
+  /* line 127, ../sass/responsive.scss */
   .main-content .content-block .appliances-categories a.appliance .appliance-icon {
     width: 100%;
     height: 154px;
@@ -961,7 +1017,7 @@ body {
     position: relative;
     margin-bottom: 45px;
   }
-  /* line 130, ../sass/responsive.scss */
+  /* line 135, ../sass/responsive.scss */
   .main-content .content-block .appliances-categories a.appliance img {
     margin: 0;
     margin-left: -47px;
@@ -969,44 +1025,45 @@ body {
     left: 50%;
     position: absolute;
   }
-  /* line 140, ../sass/responsive.scss */
+  /* line 145, ../sass/responsive.scss */
   .main-content .content-block .black-section-title {
     margin-bottom: 25px;
   }
-  /* line 145, ../sass/responsive.scss */
+  /* line 150, ../sass/responsive.scss */
   .main-content .content-block .brands-list li {
     height: 90px;
     width: 50%;
     text-align: center;
     white-space: nowrap;
   }
-  /* line 151, ../sass/responsive.scss */
+  /* line 156, ../sass/responsive.scss */
   .main-content .content-block .brands-list li:before, .main-content .content-block .brands-list li.li_before {
     content: "";
     display: inline-block;
     height: 100%;
     vertical-align: middle;
   }
-  /* line 159, ../sass/responsive.scss */
+  /* line 164, ../sass/responsive.scss */
   .main-content .content-block .brands-list li img {
     vertical-align: middle;
     max-height: 90px;
     max-width: 243px;
   }
-  /* line 167, ../sass/responsive.scss */
+  /* line 172, ../sass/responsive.scss */
   .main-content .content-block .ball-about {
     margin-left: -60px;
     margin-right: 100px;
   }
-  /* line 172, ../sass/responsive.scss */
+  /* line 177, ../sass/responsive.scss */
   .main-content .content-block .appliances-selector {
     margin-top: 80px;
   }
-  /* line 175, ../sass/responsive.scss */
+  /* line 180, ../sass/responsive.scss */
   .main-content .content-block .appliances-selector a.appliance {
-    width: 50%;
+    width: 49.8%;
+    border-right: 1px dashed #dddddd;
   }
-  /* line 178, ../sass/responsive.scss */
+  /* line 184, ../sass/responsive.scss */
   .main-content .content-block .appliances-selector a.appliance .appliance-icon {
     width: 100%;
     height: 154px;
@@ -1014,7 +1071,7 @@ body {
     position: relative;
     margin-bottom: 80px;
   }
-  /* line 186, ../sass/responsive.scss */
+  /* line 192, ../sass/responsive.scss */
   .main-content .content-block .appliances-selector a.appliance img {
     margin: 0;
     margin-left: -47px;
@@ -1022,157 +1079,154 @@ body {
     left: 50%;
     position: absolute;
   }
-  /* line 194, ../sass/responsive.scss */
-  .main-content .content-block .appliances-selector a.appliance:after {
-    display: block;
-  }
-  /* line 198, ../sass/responsive.scss */
-  .main-content .content-block .appliances-selector a.appliance.fridges:after, .main-content .content-block .appliances-selector a.appliance.fridges:before, .main-content .content-block .appliances-selector a.appliance.microwaves:after {
-    display: none;
+  /* line 200, ../sass/responsive.scss */
+  .main-content .content-block .appliances-selector a.appliance:nth-child(even) {
+    border-right: none;
   }
   /* line 204, ../sass/responsive.scss */
-  .main-content .content-block .product-selector {
-    margin-top: 80px;
+  .main-content .content-block .appliances-selector a.appliance.fridges {
+    border-top: none;
   }
-  /* line 207, ../sass/responsive.scss */
-  .main-content .content-block .product-selector a.product {
-    width: 50%;
+  /* line 212, ../sass/responsive.scss */
+  .main-content .content-block .product-selector .product {
+    width: 49.8%;
+    border-right: 1px dashed #dddddd;
   }
-  /* line 210, ../sass/responsive.scss */
-  .main-content .content-block .product-selector a.product .product-icon {
+  /* line 216, ../sass/responsive.scss */
+  .main-content .content-block .product-selector .product .product-image {
     width: 100%;
-    height: 154px;
+    height: 320px;
     text-align: center;
     position: relative;
     margin-bottom: 80px;
   }
-  /* line 218, ../sass/responsive.scss */
-  .main-content .content-block .product-selector a.product img {
+  /* line 223, ../sass/responsive.scss */
+  .main-content .content-block .product-selector .product .product-image img {
     margin: 0;
     margin-left: -47px;
     bottom: 0;
     left: 50%;
     position: absolute;
   }
-  /* line 226, ../sass/responsive.scss */
-  .main-content .content-block .product-selector a.product:after {
-    display: block;
-  }
-  /* line 230, ../sass/responsive.scss */
-  .main-content .content-block .product-selector a.product.fridges:after, .main-content .content-block .product-selector a.product.fridges:before, .main-content .content-block .product-selector a.product.microwaves:after {
-    display: none;
+  /* line 232, ../sass/responsive.scss */
+  .main-content .content-block .product-selector .product:nth-child(2) {
+    border-top: none;
   }
   /* line 236, ../sass/responsive.scss */
+  .main-content .content-block .product-selector .product:nth-child(even) {
+    border-right: none;
+  }
+  /* line 242, ../sass/responsive.scss */
   .main-content .content-block .form-container {
     padding: 75px 90px;
   }
-  /* line 239, ../sass/responsive.scss */
+  /* line 245, ../sass/responsive.scss */
   .main-content .content-block .form-container label {
     margin-bottom: 25px;
   }
-  /* line 243, ../sass/responsive.scss */
+  /* line 249, ../sass/responsive.scss */
   .main-content .content-block .form-container input {
     margin-bottom: 45px;
   }
 
-  /* line 253, ../sass/responsive.scss */
+  /* line 259, ../sass/responsive.scss */
   .site-footer .wrapper {
     padding: 0 20px;
   }
-  /* line 257, ../sass/responsive.scss */
+  /* line 263, ../sass/responsive.scss */
   .site-footer .social-nav {
     width: 214px;
   }
-  /* line 261, ../sass/responsive.scss */
+  /* line 267, ../sass/responsive.scss */
   .site-footer .footer-nav {
     display: block;
     width: 50%;
     line-height: 30px;
   }
-  /* line 267, ../sass/responsive.scss */
+  /* line 273, ../sass/responsive.scss */
   .site-footer .footer-info {
     float: left;
     margin-left: 10px;
   }
-  /* line 271, ../sass/responsive.scss */
+  /* line 277, ../sass/responsive.scss */
   .site-footer .footer-info p {
     text-align: left;
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 284, ../sass/responsive.scss */
+  /* line 290, ../sass/responsive.scss */
   .site-header .top-bar .logo-container a {
     float: left;
   }
-  /* line 287, ../sass/responsive.scss */
+  /* line 293, ../sass/responsive.scss */
   .site-header .top-bar .delivery-phone-box span {
     font-size: 21px;
     line-height: 65px;
   }
-  /* line 292, ../sass/responsive.scss */
+  /* line 298, ../sass/responsive.scss */
   .site-header .top-bar .delivery-phone-box span.phone:before {
     left: 15px;
   }
 
-  /* line 306, ../sass/responsive.scss */
+  /* line 312, ../sass/responsive.scss */
   .main-content .content-block h2, .main-content .content-block h3 {
     max-width: 520px;
   }
-  /* line 309, ../sass/responsive.scss */
+  /* line 315, ../sass/responsive.scss */
   .main-content .content-block h2.black-section-title, .main-content .content-block h3.black-section-title {
     max-width: 100%;
   }
-  /* line 314, ../sass/responsive.scss */
+  /* line 320, ../sass/responsive.scss */
   .main-content .content-block .text {
     max-width: 630px;
   }
-  /* line 320, ../sass/responsive.scss */
+  /* line 326, ../sass/responsive.scss */
   .main-content .content-block .appliances-categories a.appliance {
     width: 17%;
     margin-left: 10.6%;
   }
-  /* line 324, ../sass/responsive.scss */
+  /* line 330, ../sass/responsive.scss */
   .main-content .content-block .appliances-categories a.appliance:first-child {
     margin-left: 0;
   }
-  /* line 328, ../sass/responsive.scss */
+  /* line 334, ../sass/responsive.scss */
   .main-content .content-block .appliances-categories a.appliance .appliance-icon {
     height: 108px;
   }
-  /* line 331, ../sass/responsive.scss */
+  /* line 337, ../sass/responsive.scss */
   .main-content .content-block .appliances-categories a.appliance .appliance-icon.washing img, .main-content .content-block .appliances-categories a.appliance .appliance-icon.dryers img {
     width: 66px;
     height: 68px;
     margin-left: -33px;
   }
-  /* line 337, ../sass/responsive.scss */
+  /* line 343, ../sass/responsive.scss */
   .main-content .content-block .appliances-categories a.appliance .appliance-icon.fridges img {
     width: 66px;
     height: 108px;
     margin-left: -33px;
   }
-  /* line 343, ../sass/responsive.scss */
+  /* line 349, ../sass/responsive.scss */
   .main-content .content-block .appliances-categories a.appliance .appliance-icon.microwaves img {
     width: 72px;
     height: 47px;
     margin-left: -36px;
   }
-  /* line 353, ../sass/responsive.scss */
+  /* line 359, ../sass/responsive.scss */
   .main-content .content-block .brands-list li {
     width: 33%;
     margin-bottom: 25px;
   }
-  /* line 359, ../sass/responsive.scss */
+  /* line 365, ../sass/responsive.scss */
   .main-content .content-block .ball-about {
     margin-left: -90px;
   }
 
-  /* line 368, ../sass/responsive.scss */
+  /* line 374, ../sass/responsive.scss */
   .site-footer .footer-nav {
     margin-left: 30px;
     width: 100%;
   }
-  /* line 373, ../sass/responsive.scss */
+  /* line 379, ../sass/responsive.scss */
   .site-footer .footer-info {
     margin-left: 40px;
   }

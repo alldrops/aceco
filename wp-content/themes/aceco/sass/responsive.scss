@@ -93,6 +93,11 @@
 				padding: 0 0 70px 0;
 			}
 
+			&.block-ball {
+				display: block;
+				margin-bottom: -120px;
+			}
+
 			h2 {
 				font-size: 38px;
 				margin-bottom: 30px;
@@ -173,7 +178,8 @@
 				margin-top: 80px;
 
 				a.appliance {
-					width: 50%;
+					width: 49.8%;
+					border-right: 1px dashed #dddddd;
 
 					.appliance-icon {
 						width: 100%;
@@ -191,44 +197,44 @@
 						position: absolute;
 					}
 
-					&:after {
-						display: block;
+					&:nth-child(even) {
+						border-right: none;
 					}
 
-					&.fridges:after, &.fridges:before, &.microwaves:after {
-						display: none;
+					&.fridges {
+						border-top: none;
 					}
 				}
 			}
 
 			.product-selector {
-				margin-top: 80px;
 
-				a.product {
-					width: 50%;
+				.product {
+					width: 49.8%;
+					border-right: 1px dashed #dddddd;
 
-					.product-icon {
+					.product-image {
 						width: 100%;
-						height: 154px;
+						height: 320px;
 						text-align: center;
 						position: relative;
 						margin-bottom: 80px;
+						
+						img {
+							margin: 0;
+							margin-left: -47px;
+							bottom: 0;
+							left: 50%;
+							position: absolute;
+						}
 					}
 
-					img {
-						margin: 0;
-						margin-left: -47px;
-						bottom: 0;
-						left: 50%;
-						position: absolute;
+					&:nth-child(2), {
+						border-top: none;
 					}
 
-					&:after {
-						display: block;
-					}
-
-					&.fridges:after, &.fridges:before, &.microwaves:after {
-						display: none;
+					&:nth-child(even) {
+						border-right: none;
 					}
 				}
 			}

@@ -29,6 +29,12 @@ body {
 	}
 }
 
+.product-wrapper {
+	max-width: 900px;
+	position: relative;
+	margin: 0 auto;
+}
+
 // HEADER
 
 .site-header {
@@ -151,7 +157,7 @@ body {
 			
 		}
 
-		li.current-menu-item a, li.current_page_item a, li.current-page-ancestor a {
+		li.current-menu-item a, li.current_page_item a, li.current-page-ancestor a, li.current_page_parent a {
 			@include proxima-nova-semibold;
 			border-bottom: 2px solid #000;
 		}
@@ -172,6 +178,14 @@ body {
 		&:last-child {
 			margin-bottom: 0;
 		}
+
+		&.products {
+			padding: 0;
+
+			.content-block {
+				padding: 0;
+			}
+		}
 	}
 
 	.content-block {
@@ -182,16 +196,16 @@ body {
 		overflow-x: hidden;
 
 		&.dashed {
-			background: url(../images/dashed-line.png) repeat-x left bottom #FFF;
+			border-bottom: 1px dashed #dddddd;
 		}
 
 		&.gray {
 			background: #efefef;
 			padding: 0 0 80px 0;
+		}
 
-			&.dashed {
-				background: url(../images/dashed-line.png) repeat-x left bottom #efefef;
-			}
+		&.block-ball {
+			display: none;
 		}
 
 		&.area-served-map {
@@ -201,6 +215,24 @@ body {
 			&.north-shore { background: url('../images/map-north-shore.png') no-repeat right center #FFF; }
 			&.inner-west { background: url('../images/map-inner-west.png') no-repeat right center #FFF; }
 			&.eastern-suburbs { background: url('../images/map-eastern-suburbs.png') no-repeat right center #FFF; }
+		}
+
+		&.p404 {
+			h1 {
+				@include proxima-nova-semibold;
+				font-size: 60px;
+				text-align: center;	
+				color: $dark-gray;
+				margin-bottom: 30px;
+			}
+
+			p {
+				text-align: center;
+				padding: 0 20px;
+				@include proxima-nova-semibold;
+				text-align: center;
+				font-size: 24px;
+			}
 		}
 
 		h2, h3:not(.black-section-title) {
@@ -249,7 +281,7 @@ body {
 				strong {
 					color: #000;
 				}
-				
+
 				span, a {
 					color: $blue;
 				}
@@ -373,6 +405,7 @@ body {
 				text-transform: uppercase;
 				background: #FFF;
 				padding: 95px 0 80px 0;
+				border-top: 1px dashed #dddddd;
 				-webkit-transition: all 0.2s linear;
 				-moz-transition: all 0.2s linear;
 				-ms-transition: all 0.2s linear;
@@ -382,35 +415,12 @@ body {
 				&:hover {
 					background: #3c3c3c;
 					color: #FFF;
-
-					&:before, &:after {
-						display: none;
-					}
+					border-top: 1px solid $dark-gray;
+					border-right: 1px solid $dark-gray;
 				}
 
-				&:before {
-					content: " ";
-					position: absolute;
-					left: 0;
-					top: 0;
-					width: 100%;
-					height: 1px;
-					background: url('../images/dashed-line.png') repeat-x left center;
-				}
-
-				&:after {
-					content: " ";
-					position: absolute;
-					right: 0;
-					top: 0;
-					width: 1px;
-					height: 100%;
-					display: none;
-					background: url('../images/dashed-line-v.png') repeat-y left center;
-				}
-
-				&.washing:before {
-					display: none;
+				&:first-child {
+					border-top: none;
 				}
 
 				img {
@@ -422,59 +432,85 @@ body {
 		}
 
 		.product-selector {
-			margin-bottom: 80px;
-			margin-top: 30px;
 			float: left;
 			width: 100%;
 			background: #FFF;
 
-			a.product {
+			.product {
 				width: 100%;
+				height: 670px;
 				float: left;
 				text-align: center;
-				@include proxima-nova-semibold;
-				font-size: 18px;
-				color: #000;
 				position: relative;
 				text-transform: uppercase;
 				background: #FFF;
-				padding: 95px 0 80px 0;
+				border-top: 1px dashed #dddddd;
 				-webkit-transition: all 0.2s linear;
 				-moz-transition: all 0.2s linear;
 				-ms-transition: all 0.2s linear;
 				-o-transition: all 0.2s linear;
 				transition: all 0.2s linear;
 
-				&:before {
-					content: " ";
-					position: absolute;
-					left: 0;
-					top: 0;
+				&:first-child {
+					border-top: none;
+				}
+
+				.product-image {
+					padding-top: 80px;
+					margin-bottom: 30px;
+					
+					img {
+						display: block;
+						clear: both;
+						margin: 0 auto;
+					}
+				}
+
+				.prod-name {
+					@include proxima-nova-semibold;
+					font-size: 18px;
+					color: #000;
+					float: left;
 					width: 100%;
-					height: 1px;
-					background: url('../images/dashed-line.png') repeat-x left center;
+					margin-bottom: 40px;
 				}
 
-				&:after {
-					content: " ";
-					position: absolute;
-					right: 0;
-					top: 0;
-					width: 1px;
-					height: 100%;
-					display: none;
-					background: url('../images/dashed-line-v.png') repeat-y left center;
+				p {
+					@include proxima-nova-light;
+					font-size: 16px;
+					text-transform: none;
+					line-height: 30px;
+
+					span {
+						@include proxima-nova-semibold;
+						color: $blue;
+						text-transform: uppercase;
+						font-size: 24px;
+						padding: 0 7px;
+					}
 				}
 
-				&.washing:before {
-					display: none;
-				}
-
-				img {
+				.btn-view {
+					@include proxima-nova-semibold;
+					color: #FFF;
+					background: $dark-gray;
+					text-align: center;
+					width: 162px;
+					height: 44px;
 					display: block;
-					clear: both;
-					margin: 0 auto 30px auto;
+					margin: 45px auto 0 auto;
+					line-height: 44px;
+					-webkit-transition: all 0.2s linear;
+					-moz-transition: all 0.2s linear;
+					-ms-transition: all 0.2s linear;
+					-o-transition: all 0.2s linear;
+					transition: all 0.2s linear;
+
+					&:hover {
+						background: $light-gray;
+					}
 				}
+
 			}
 		}
 
@@ -555,6 +591,17 @@ body {
 					-o-transition: background 0.2s linear;
 					transition: background 0.2s linear;
 				}
+			}
+		}
+
+		.product-gallery {
+			float: left;
+			width: 100%;
+			height: 300px;
+			background: $light-gray;
+
+			img {
+
 			}
 		}
 

@@ -26,7 +26,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="content-block dashed">
+			<div class="content-block">
 				<div class="content-wrapper">
 					<div class="appliances-categories">
 						<a href="#" class="appliance">
@@ -54,6 +54,10 @@
 							Microwaves
 						</a>
 					</div>
+				</div>
+			</div>
+			<div class="content-block dashed">
+				<div class="content-wrapper">
 					<h2>Aceco takes care of all the hard stuff for you.</h2>
 					<div class="text">
 						<p>

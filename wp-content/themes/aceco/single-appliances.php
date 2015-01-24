@@ -1,4 +1,4 @@
-<?php /* Template Name: Appliances - Listing */ ?>
+<?php /* Template Name: Appliances - Details */ ?>
 
 <?php include("header.php"); ?>
 
@@ -6,18 +6,12 @@
 	<div class="wrapper">
 		<div class="content-section">
 			<div class="content-block">
-				<div class="content-wrapper">
-					<h2><?php the_field('top_title'); ?></h2>
-					<?php 
-				    $top_desc = get_field('top_description', $post->ID);
-				    if( !empty($top_desc) ): ?>
-					        
-						<div class="text">
-							<p>
-								<?php echo $top_desc; ?>
-							</p>
-						</div>
-					<?php endif; ?>
+				<div class="product-wrapper">
+					<div class="product-gallery">
+						<ul>
+							<li></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -108,4 +102,5 @@
 	</div>
 </div>
 
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/libs/owl.carousel.min.js"></script>
 <?php include("footer.php"); ?>
