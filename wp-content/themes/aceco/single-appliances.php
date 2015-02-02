@@ -20,16 +20,19 @@
 								<img src="" alt="">
 							</div>
 
-							<ul id="product-slider" class="flexslider">
-								<ul class="slides">
-									<?php while( have_rows('appliance_gallery') ): the_row();
-										$image = get_sub_field('image');
-									?>
+							<div class="slider-container">
+								<ul id="product-slider" class="flexslider">
+									<ul class="slides">
+										<?php while( have_rows('appliance_gallery') ): the_row();
+											$image = get_sub_field('image');
+										?>
 
-									<li><img src="<?php $print_image = wp_get_attachment_image_src( $image, 'full' ); echo $print_image[0]; ?>"></li>
-									<?php endwhile; ?>
+										<li><img src="<?php $print_image = wp_get_attachment_image_src( $image, 'full' ); echo $print_image[0]; ?>"></li>
+										<?php endwhile; ?>
+									</ul>
 								</ul>
-							</ul>
+							</div>
+
 						</div>
 
 					<?php endif; ?>
@@ -40,7 +43,21 @@
 					<?php # rental content ?>
 
 					<div class="rental-container">
-						
+						<h2>Rent this Fridge</h2>
+
+						<?php if( have_rows('prices') ): ?>
+							<?php while( have_rows('prices') ): the_row();
+								$number_of_months = get_sub_field('number_of_months');
+								$price = get_sub_field('price');
+							?>
+
+								<a href="#" class="options">
+									<span class="checkbox"></span> <?php echo $number_of_months; ?> months <span><?php echo $price ?></span> p/month
+								</a>
+							<?php endwhile; ?>
+						<?php endif; ?>
+
+						<a href="/aceco/contact" class="btn-rent">Apply to Rent</a>
 					</div>
 					
 					<?php ################ ?>
@@ -70,14 +87,14 @@
 							$subtitle = get_sub_field('title');
 							$subdescription = get_sub_field('description');
 						
-						if(!empty($subtitle)): ?>
-							<h2><?php echo $subtitle; ?></h2>
-						<?php endif; 
-						if(!empty($subdescription)): ?>
-							<div class="text">
-								<?php echo $subdescription; ?>
-							</div>
-						<?php endif; ?>
+							if(!empty($subtitle)): ?>
+								<h2><?php echo $subtitle; ?></h2>
+							<?php endif; 
+							if(!empty($subdescription)): ?>
+								<div class="text">
+									<?php echo $subdescription; ?>
+								</div>
+							<?php endif; ?>
 						
 						<?php endwhile; ?>
 					<?php endif; ?>
@@ -97,5 +114,9 @@
 		if($(this).find('a').text() == 'Appliances') {
 			$(this).addClass('current_page_parent');
 		}
+	});
+
+	$(window).on('load', function(){
+		$('.flexslider .slides').find('li').trigger('click');
 	});
 </script>

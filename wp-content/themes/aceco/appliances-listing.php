@@ -104,9 +104,12 @@
                     		<?php endwhile; ?>
                     	</div>
                 	<?php endif; ?>
+
+                	<?php wp_reset_query(); ?>
+
+
 				</div>
 			</div>
-		</div>
 		<?php if( have_rows('content_section') ): ?>
 			<?php while( have_rows('content_section') ): the_row(); ?>
 				<div class="content-section">

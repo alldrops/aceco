@@ -33,6 +33,7 @@ body {
 	max-width: 900px;
 	position: relative;
 	margin: 0 auto;
+	padding: 0 20px;
 }
 
 // HEADER
@@ -446,6 +447,21 @@ body {
 			}
 		}
 
+		&.search-results {
+			.post-result {
+				float: left;
+				width: 100%;
+
+				h3:after {
+					display: none;
+				}
+
+				h3 a {
+					color: $dark-gray;
+				}
+			}
+		}
+
 		&.product-details {
 			h2 {
 				@include proxima-nova-semibold;
@@ -477,49 +493,65 @@ body {
 
 			.gallery-product {
 				float: left;
-				width:575px;
-				height: 430px;
+				width: 100%;
+				height: 300px;
 				position: relative;
 
 				.full-image {
 					float: left;
-					width: 430px;
-					height: 430px;
-					background: $light-gray;
+					width: 100%;
+					height: 300px;
 					position: relative;
 
 					img {
 						display: block;
 						margin: 0 auto;
+						max-width: 100%;
+						max-height: 100%;
+						height: 100%;
+						width: auto;
 					}
 				}
 
-				.flexslider {
-					float: right;
+				.slider-container {
+					display: none;
+					position: relative;
 					width: 120px;
-					height: 250px;
+					height: 330px;
+					overflow: hidden;
+					float: left;
+					margin-left: 20px;
+					margin-top: 50px;
+				}
+
+				.flexslider {
+					float: left;
+					width: 120px;
+					height: 240px;
 					border: none;
 					border-radius: 0;
 					box-shadow: none;
-					margin-top: 90px;
+					margin: 38px 0 0 0;
 
 					.flex-viewport {
-						height: 250px;
+						height: 240px !important;
 					}
 
-					li {
-						float: left;
-						width: 120px;
-						height: 120px;
-						display: block;
-
-						img {
-							max-width: 100%;
-							max-height: 100%;
-							height: 100%;
-							width: auto;
+					.slides {
+						li {
+							float: left;
+							width: 120px;
+							height: 120px;
 							display: block;
-							margin: 0 auto;
+
+							img {
+								max-width: 90%;
+								max-height: 90%;
+								height: 100%;
+								width: auto;
+								display: block;
+								margin: 0 auto;
+							}
 						}
 					}
 
@@ -527,10 +559,77 @@ body {
 						text-indent: -99999px;
 						width: 27px;
 						height: 14px;
+						position: absolute;
+						margin: 0;
 						
-						&.flex-prev { background: url('../images/arrow-up-black.png') no-repeat center center; top: -20px; left: 45px;}
-						&.flex-next { background: url('../images/arrow-down-black.png') no-repeat center center; top: 165px; left: 45px;}
+						&.flex-prev { 
+							background: url('../images/arrow-up-black.png') no-repeat center center;
+							top: -38px;
+							left: 45px;
+						}
+						
+						&.flex-next { 
+							background: url('../images/arrow-down-black.png') no-repeat center center;
+							top: 260px;
+							left: 45px;
+						}
 					}
+				}
+			}
+
+			.rental-container {
+				float: left;
+				width: 100%;
+				margin-top: 30px;
+
+				h2 {
+					margin-top: 0;
+					margin-bottom: 30px;
+				}
+
+				a.options {
+					float: left;
+					width: 100%;
+					@include proxima-nova-light;
+					font-size: 16px;
+					color: #000;
+					margin-bottom: 25px;
+					line-height: 20px;
+
+					span {
+						@include proxima-nova-semibold;
+						color: $blue;
+						font-size: 24px;
+						padding: 0 7px;
+					}
+
+					.checkbox {
+						float: left;
+						width: 23px;
+						height: 23px;
+						border: 1px solid #cccccc;
+						margin-right: 15px;
+					}
+
+					&.active {
+						.checkbox {
+							background: url('../images/check-white.png') no-repeat center center $blue;
+						}
+					}
+				}
+
+				.btn-rent {
+					display: block;
+					clear: both;
+					width: 100%;
+					height: 44px;
+					background: $dark-gray;
+					color: #FFF;
+					text-align: center;
+					@include proxima-nova-semibold;
+					font-size: 18px;
+					line-height: 44px;
+					text-transform: uppercase;
 				}
 			}
 		}
