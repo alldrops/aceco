@@ -33,3 +33,9 @@
 	font-style: normal;
 	font-weight: 700;
 }
+
+@mixin merriweather-ultrabold {
+	font-family: "merriweather",serif;
+	font-style: normal;
+	font-weight: 900;
+}

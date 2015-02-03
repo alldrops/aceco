@@ -23,6 +23,76 @@
 <input type="hidden" id="appl-cat" value="">
 <div class="main-content">
 	<div class="wrapper">
+		<div class="content-section products">
+			<div class="content-block">
+
+				<?php
+
+				$at = getApplCat();
+
+                $args = array(
+                    'post_type'             => 'appliances',
+                    'orderby'               => 'order',
+                    'order'                 => 'ASC',
+                    'appliances_type'   	=> $at,
+                    'posts_per_page'        => -1
+                );
+
+                $appliances_query = new WP_Query( $args );
+
+                $first = true;
+
+                if ($appliances_query->have_posts()) : ?>
+					<div class="product-selector">
+                    	<?php while ($appliances_query->have_posts()) : $appliances_query->the_post(); ?>
+                    		<?php 
+                			// Title
+                			$name = get_field('name');
+                			
+                			// Image
+                			if( have_rows('appliance_gallery') ):
+                				$counter = 0;
+                				if($counter < 1) {
+                    				while( have_rows('appliance_gallery') ): the_row();
+                    					$image = get_sub_field('image');
+                    					$counter++;
+                    				endwhile;
+                				}
+                			endif;
+                			?>
+
+                			<div class="product">
+                				<a href="<?php echo get_permalink(); ?>">
+                					<div class="product-image">
+										<img src="<?php $print_image = wp_get_attachment_image_src( $image, 'full' ); echo $print_image[0]; ?>" alt="">
+									</div>
+								</a>
+								<a href="<?php echo get_permalink(); ?>" class="prod-name"><?php echo $name; ?></a>
+
+								<?php 
+                    			// Prices
+                    			if( have_rows('prices') ): 
+                    				$counter = 0;
+                    				if($counter < 2) {
+                        				while( have_rows('prices') ): the_row();
+                        					$num_mon = get_sub_field('number_of_months');
+                        					$price = get_sub_field('price');
+                        					?>
+                        					<p><?php echo $num_mon ?> months <span><?php echo $price ?></span> p/month</p>
+                        					<?php 
+                        					$counter++;
+                        				endwhile;
+                    				}
+                    			endif; ?>
+        						<a href="<?php echo get_permalink(); ?>" class="btn-view">View</a>
+                			</div> 
+                		<?php endwhile; ?>
+                	</div>
+            	<?php endif; ?>
+
+            	<?php wp_reset_query(); ?>
+			</div>
+		</div>
 		<div class="content-section">
 			<div class="content-block">
 				<div class="content-wrapper">
@@ -38,78 +108,6 @@
 				</div>
 			</div>
 		</div>
-		<div class="content-section products">
-			<div class="content-block">
-
-				<?php
-
-					$at = getApplCat();
-
-                    $args = array(
-                        'post_type'             => 'appliances',
-                        'orderby'               => 'order',
-                        'order'                 => 'ASC',
-                        'appliances_type'   	=> $at,
-                        'posts_per_page'        => -1
-                    );
-
-                    $appliances_query = new WP_Query( $args );
-
-                    $first = true;
-
-                    if ($appliances_query->have_posts()) : ?>
-						<div class="product-selector">
-                        	<?php while ($appliances_query->have_posts()) : $appliances_query->the_post(); ?>
-                        		<?php 
-                    			// Title
-                    			$name = get_field('name');
-                    			
-                    			// Image
-                    			if( have_rows('appliance_gallery') ):
-                    				$counter = 0;
-                    				if($counter < 1) {
-                        				while( have_rows('appliance_gallery') ): the_row();
-                        					$image = get_sub_field('image');
-                        					$counter++;
-                        				endwhile;
-                    				}
-                    			endif;
-                    			?>
-
-                    			<div class="product">
-                    				<a href="<?php echo get_permalink(); ?>">
-                    					<div class="product-image">
-											<img src="<?php $print_image = wp_get_attachment_image_src( $image, 'full' ); echo $print_image[0]; ?>" alt="">
-										</div>
-									</a>
-									<a href="<?php echo get_permalink(); ?>" class="prod-name"><?php echo $name; ?></a>
-
-									<?php 
-                        			// Prices
-                        			if( have_rows('prices') ): 
-                        				$counter = 0;
-                        				if($counter < 2) {
-	                        				while( have_rows('prices') ): the_row();
-	                        					$num_mon = get_sub_field('number_of_months');
-	                        					$price = get_sub_field('price');
-	                        					?>
-	                        					<p><?php echo $num_mon ?> months <span><?php echo $price ?></span> p/month</p>
-	                        					<?php 
-	                        					$counter++;
-	                        				endwhile;
-                        				}
-                        			endif; ?>
-            						<a href="<?php echo get_permalink(); ?>" class="btn-view">View</a>
-                    			</div> 
-                    		<?php endwhile; ?>
-                    	</div>
-                	<?php endif; ?>
-
-                	<?php wp_reset_query(); ?>
-
-
-				</div>
-			</div>
 		<?php if( have_rows('content_section') ): ?>
 			<?php while( have_rows('content_section') ): the_row(); ?>
 				<div class="content-section">

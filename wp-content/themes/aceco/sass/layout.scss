@@ -132,6 +132,7 @@ body {
 		li {
 			padding: 0 25px;
 			float: left;
+			position: relative;
 
 			&:first-child {
 				margin-left: 10px;	
@@ -152,6 +153,32 @@ body {
 
 				&:hover {
 					border-bottom: 2px solid #000;
+				}
+			}
+
+			.sub-menu {
+				position: absolute;
+				left: 0;
+				top: 35px;
+				width: 225px;
+				background: #FFF;
+				z-index: 10;
+				padding: 15px 0;
+				display: none;
+
+				li {
+					float: left;
+					width: 100%;
+					margin: 0;
+
+					a {
+						border-bottom: 2px solid #FFF;
+						text-align: left;
+
+						&:hover {
+							border-bottom: 2px solid #000;
+						}
+					}
 				}
 			}
 			
@@ -635,10 +662,11 @@ body {
 		}
 
 		h2, h3:not(.black-section-title) {
-			@include merriweather-bold;
+			@include merriweather-ultrabold;
 			margin-bottom: 50px;
 			position: relative;
 			padding-bottom: 50px;
+			letter-spacing: 1px;
 		}
 
 		h2 {

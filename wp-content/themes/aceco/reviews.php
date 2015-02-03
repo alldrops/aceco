@@ -31,3 +31,9 @@
 <?php endwhile; ?>
 
 <?php include("footer.php"); ?>
+
+<script type="text/javascript">
+	$.each($('.reviews-listing hr'), function(item, i){
+		$(this).remove();
+	});
+</script>
