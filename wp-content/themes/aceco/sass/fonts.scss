@@ -19,7 +19,7 @@
 @mixin merriweather-light {
 	font-family: "merriweather",serif;
 	font-style: normal;
-	font-weight: 300;
+	font-weight: 300 !important;
 }
 
 @mixin merriweather-regular {

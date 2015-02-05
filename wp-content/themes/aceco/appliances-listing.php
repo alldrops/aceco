@@ -84,6 +84,25 @@
                         				endwhile;
                     				}
                     			endif; ?>
+
+                    			<?php 
+                    			// Prices
+                    			if( have_rows('combo_prices') ): 
+                    				$counter = 0;
+                    			?>
+                    			<span class="price-title">Combo Pricing</span>
+                    			<?php
+                    				if($counter < 2) {
+                        				while( have_rows('combo_prices') ): the_row();
+                        					$num_mon = get_sub_field('number_of_months');
+                        					$price = get_sub_field('price');
+                        					?>
+                        					<p><?php echo $num_mon ?> months <span><?php echo $price ?></span> p/month</p>
+                        					<?php 
+                        					$counter++;
+                        				endwhile;
+                    				}
+                    			endif; ?>
         						<a href="<?php echo get_permalink(); ?>" class="btn-view">View</a>
                 			</div> 
                 		<?php endwhile; ?>

@@ -57,6 +57,17 @@
 							<?php endwhile; ?>
 						<?php endif; ?>
 
+						<span class="price-title">Combo Pricing</span>
+            			<?php
+            				while( have_rows('combo_prices') ): the_row();
+            					$num_mon = get_sub_field('number_of_months');
+            					$price = get_sub_field('price');
+            					?>
+            					<a href="#" class="options">
+									<span class="checkbox"></span> <?php echo $num_mon; ?> months <span><?php echo $price ?></span> p/month
+								</a>
+            					<?php endwhile; ?>
+
 						<a href="/aceco/contact" class="btn-rent">Apply to Rent</a>
 					</div>
 					
@@ -110,11 +121,8 @@
 <?php include("footer.php"); ?>
 
 <script type="text/javascript">
-	$.each($('#menu-main-navigation li'), function(item, i){
-		if($(this).find('a').text() == 'Appliances') {
-			$(this).addClass('current_page_parent');
-		}
-	});
+
+	$('.menu-appliances').addClass('current_page_parent');
 
 	$(window).on('load', function(){
 		$('.flexslider .slides').find('li').trigger('click');
