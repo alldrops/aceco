@@ -44,11 +44,11 @@ body {
 
 	.white-bar {
 		position: absolute;
-		left: -25%;
+		left: -45%;
 		top: 0;
 		height: 85px;
 		background: #FFF;
-		width: 50%;
+		width: 75%;
 	}
 
 	.top-bar {
@@ -132,18 +132,13 @@ body {
 		display: none;
 
 		li {
-			padding: 0 17px;
+			padding: 0 16px;
 			float: left;
 			position: relative;
 
 			&:first-child {
 				margin-left: 10px;	
 			}
-
-			// //nav break fix
-			// @media only screen and (min-width: 1069px) {
-			// 	padding: 0 28px;
-			// }
 			
 			a {
 				@include proxima-nova-light;
@@ -351,6 +346,13 @@ body {
 
 			h2 {
 				padding-bottom: 105px;
+			}
+
+			.text h1, .text h2, .text h3, .text h4, .text h5 {
+				margin: 30px 0 0 0;
+				padding: 0;
+				float: left;
+				width: 100%;
 			}
 
 
@@ -1006,7 +1008,6 @@ body {
 					span {
 						@include proxima-nova-semibold;
 						color: $blue;
-						text-transform: uppercase;
 						font-size: 24px;
 						padding: 0 7px;
 					}

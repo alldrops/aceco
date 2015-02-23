@@ -3,7 +3,7 @@
 		<span class="white-bar"></span>
 		<div class="wrapper">
 			<div class="logo-container">
-				<h1><a href="http://www.youand.codes/aceco/">ACECO RENTALS</a></h1>
+				<h1><a href="http://www.acecorentals.com.au/">ACECO RENTALS</a></h1>
 			</div>
 			<div class="delivery-phone-box">
 				<span class="delivery">Free Delivery & Installation</span>

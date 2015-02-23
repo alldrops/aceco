@@ -78,7 +78,7 @@
                         					$num_mon = get_sub_field('number_of_months');
                         					$price = get_sub_field('price');
                         					?>
-                        					<p><?php echo $num_mon ?> months <span><?php echo $price ?></span> p/month</p>
+                        					<p><?php echo $num_mon ?> months <span><?php echo $price ?></span></p>
                         					<?php 
                         					$counter++;
                         				endwhile;
@@ -90,14 +90,17 @@
                     			if( have_rows('combo_prices') ): 
                     				$counter = 0;
                     			?>
-                    			<span class="price-title">Combo Pricing</span>
+                    			<?php $combo_title = get_field('combo_title');
+                    			if( !empty($combo_title) ): ?>
+                    				<span class="price-title"><?php echo $combo_title; ?></span>
+                    			<?php endif; ?>
                     			<?php
                     				if($counter < 2) {
                         				while( have_rows('combo_prices') ): the_row();
                         					$num_mon = get_sub_field('number_of_months');
                         					$price = get_sub_field('price');
                         					?>
-                        					<p><?php echo $num_mon ?> months <span><?php echo $price ?></span> p/month</p>
+                        					<p><?php echo $num_mon ?> months <span><?php echo $price ?></span></p>
                         					<?php 
                         					$counter++;
                         				endwhile;

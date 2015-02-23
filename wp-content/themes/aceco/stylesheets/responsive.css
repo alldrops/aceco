@@ -394,81 +394,82 @@
   .site-header .top-bar .delivery-phone-box span {
     font-size: 21px;
     line-height: 65px;
+    letter-spacing: 2px;
   }
-  /* line 460, ../sass/responsive.scss */
+  /* line 461, ../sass/responsive.scss */
   .site-header .top-bar .delivery-phone-box span.delivery {
     margin-left: 54px;
   }
-  /* line 465, ../sass/responsive.scss */
+  /* line 466, ../sass/responsive.scss */
   .site-header .top-bar .delivery-phone-box span.phone:before {
     left: 15px;
   }
-  /* line 473, ../sass/responsive.scss */
+  /* line 474, ../sass/responsive.scss */
   .site-header .main-nav {
     display: block;
   }
-  /* line 476, ../sass/responsive.scss */
+  /* line 477, ../sass/responsive.scss */
   .site-header .main-nav li:hover .sub-menu {
     display: block;
   }
-  /* line 479, ../sass/responsive.scss */
+  /* line 480, ../sass/responsive.scss */
   .site-header .mobile-nav {
     display: none;
   }
 
-  /* line 489, ../sass/responsive.scss */
+  /* line 490, ../sass/responsive.scss */
   .main-content .content-block h2, .main-content .content-block h3 {
     max-width: 520px;
   }
-  /* line 492, ../sass/responsive.scss */
+  /* line 493, ../sass/responsive.scss */
   .main-content .content-block h2.black-section-title, .main-content .content-block h3.black-section-title {
     max-width: 100%;
   }
-  /* line 497, ../sass/responsive.scss */
+  /* line 498, ../sass/responsive.scss */
   .main-content .content-block .text {
     max-width: 630px;
   }
-  /* line 503, ../sass/responsive.scss */
+  /* line 504, ../sass/responsive.scss */
   .main-content .content-block .appliances-categories a.appliance {
     width: 17%;
     margin-left: 10.6%;
   }
-  /* line 507, ../sass/responsive.scss */
+  /* line 508, ../sass/responsive.scss */
   .main-content .content-block .appliances-categories a.appliance:first-child {
     margin-left: 0;
   }
-  /* line 511, ../sass/responsive.scss */
+  /* line 512, ../sass/responsive.scss */
   .main-content .content-block .appliances-categories a.appliance .appliance-icon {
     height: 108px;
   }
-  /* line 514, ../sass/responsive.scss */
+  /* line 515, ../sass/responsive.scss */
   .main-content .content-block .appliances-categories a.appliance .appliance-icon.washing img, .main-content .content-block .appliances-categories a.appliance .appliance-icon.dryers img {
     width: 66px;
     height: 68px;
     margin-left: -33px;
   }
-  /* line 520, ../sass/responsive.scss */
+  /* line 521, ../sass/responsive.scss */
   .main-content .content-block .appliances-categories a.appliance .appliance-icon.fridges img {
     width: 66px;
     height: 108px;
     margin-left: -33px;
   }
-  /* line 526, ../sass/responsive.scss */
+  /* line 527, ../sass/responsive.scss */
   .main-content .content-block .appliances-categories a.appliance .appliance-icon.microwaves img {
     width: 72px;
     height: 47px;
     margin-left: -36px;
   }
-  /* line 536, ../sass/responsive.scss */
+  /* line 537, ../sass/responsive.scss */
   .main-content .content-block .brands-list li {
     width: 33%;
     margin-bottom: 25px;
   }
-  /* line 542, ../sass/responsive.scss */
+  /* line 543, ../sass/responsive.scss */
   .main-content .content-block .ball-about {
     margin-left: -90px;
   }
-  /* line 547, ../sass/responsive.scss */
+  /* line 548, ../sass/responsive.scss */
   .main-content .content-block.blog-post .post-navigation {
     position: absolute;
     right: 20px;
@@ -476,24 +477,24 @@
     width: 160px;
     margin-top: 0;
   }
-  /* line 555, ../sass/responsive.scss */
+  /* line 556, ../sass/responsive.scss */
   .main-content .content-block.blog-post .post-navigation a.prev-post, .main-content .content-block.blog-post .post-navigation a.next-post {
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 20px;
   }
-  /* line 563, ../sass/responsive.scss */
+  /* line 564, ../sass/responsive.scss */
   .main-content .content-block.blog-post .social-share {
     display: block;
   }
-  /* line 569, ../sass/responsive.scss */
+  /* line 570, ../sass/responsive.scss */
   .main-content .content-block.blog-posts-listing .post {
     padding: 60px 90px;
     width: 49.8%;
     border-right: 1px dashed #ddd;
     min-height: 450px;
   }
-  /* line 575, ../sass/responsive.scss */
+  /* line 576, ../sass/responsive.scss */
   .main-content .content-block.blog-posts-listing .post h3 {
     font-size: 30px;
     padding-bottom: 0;
@@ -501,28 +502,28 @@
     max-height: 95px;
     margin-bottom: 100px;
   }
-  /* line 583, ../sass/responsive.scss */
+  /* line 584, ../sass/responsive.scss */
   .main-content .content-block.blog-posts-listing .post:nth-child(2) {
     border-top: none;
   }
-  /* line 587, ../sass/responsive.scss */
+  /* line 588, ../sass/responsive.scss */
   .main-content .content-block.blog-posts-listing .post:nth-child(even) {
     border-right: none;
   }
-  /* line 595, ../sass/responsive.scss */
+  /* line 596, ../sass/responsive.scss */
   .main-content .content-block.product-details .gallery-product {
     width: 575px;
     height: 430px;
     position: relative;
   }
-  /* line 600, ../sass/responsive.scss */
+  /* line 601, ../sass/responsive.scss */
   .main-content .content-block.product-details .gallery-product .full-image {
     float: left;
     width: 430px;
     height: 430px;
     position: relative;
   }
-  /* line 606, ../sass/responsive.scss */
+  /* line 607, ../sass/responsive.scss */
   .main-content .content-block.product-details .gallery-product .full-image img {
     display: block;
     margin: 0 auto;
@@ -531,39 +532,39 @@
     height: 100%;
     width: auto;
   }
-  /* line 616, ../sass/responsive.scss */
+  /* line 617, ../sass/responsive.scss */
   .main-content .content-block.product-details .gallery-product .slider-container {
     display: block;
   }
-  /* line 621, ../sass/responsive.scss */
+  /* line 622, ../sass/responsive.scss */
   .main-content .content-block.product-details .rental-container {
     float: right;
     width: 270px;
   }
-  /* line 627, ../sass/responsive.scss */
+  /* line 628, ../sass/responsive.scss */
   .main-content .content-block .container-form {
     width: 355px;
     float: none;
     display: block;
     margin: 20px auto -50px auto;
   }
-  /* line 634, ../sass/responsive.scss */
+  /* line 635, ../sass/responsive.scss */
   .main-content .content-block .write-review {
     position: absolute;
     right: -70px;
     top: 5px;
   }
-  /* line 641, ../sass/responsive.scss */
+  /* line 642, ../sass/responsive.scss */
   .main-content .content-block.reviews-listing .hreview {
     padding: 60px;
   }
 
-  /* line 651, ../sass/responsive.scss */
+  /* line 652, ../sass/responsive.scss */
   .site-footer .footer-nav {
     margin-left: 30px;
     width: 100%;
   }
-  /* line 656, ../sass/responsive.scss */
+  /* line 657, ../sass/responsive.scss */
   .site-footer .footer-info {
     margin-left: 40px;
   }
